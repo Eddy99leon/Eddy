@@ -17,7 +17,7 @@ const Footer = () => {
                   Eddy
                 </p>
               </div>
-              <p className="max-w-[400px]">
+              <p className="max-w-[400px] text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing.
                 sit amet consectetur adipisicing.
                 Lorem ipsum  consectetur adipisicing.
@@ -73,9 +73,12 @@ const Footer = () => {
 
 
       <div className="bg-black border-t border-gray-700">
-        <div className="container text-white py-4">
+        <div className="container flex justify-between items-center text-white py-4">
           <div>
-            copyright
+            copyright. All droits sont reserved
+          </div>
+          <div>
+            Coder avec le coeur par Eddy A.
           </div>
         </div>
       </div>
