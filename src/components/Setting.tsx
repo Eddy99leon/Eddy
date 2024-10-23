@@ -20,11 +20,39 @@ const Setting = () => {
             </DialogTrigger>
             <DialogContent>
                 <DialogHeader>
-                <DialogTitle>Settings:</DialogTitle>
+                <DialogTitle className="mb-6">
+                    Settings:
+                </DialogTitle>
                 <DialogDescription>
-                    <div className="space-x-8">
-                        <button onClick={() => setTheme("light")}>light</button>
-                        <button onClick={() => setTheme("dark")}>Dark</button>
+                    <div className="space-y-6">
+                        <div>
+                            <h2>Couleur</h2>
+                            <div className="space-x-8">
+                                <button onClick={() => setTheme("green")}>green</button>
+                                <button onClick={() => setTheme("blue")}>blue</button>
+                                <button onClick={() => setTheme("blue")}>orange</button>
+                                <button onClick={() => setTheme("blue")}>rouge</button>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Dark/Light</h2>
+                            <div className="space-x-8">
+                                <button onClick={() => setTheme("dark")}>Dark</button>
+                                <button onClick={() => setTheme("light")}>light</button>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Language</h2>
+                            <div className="space-x-8">
+                                <button onClick={() => setTheme("light")}>Anglais</button>
+                                <button onClick={() => setTheme("dark")}>Français</button>
+                                <button onClick={() => setTheme("green")}>Malagasy</button>
+                            </div>
+                        </div>
+                        <div className="space-x-8">
+                            <button onClick={() => setTheme("light")}>Annuler</button>
+                            <button onClick={() => setTheme("dark")}>Sauvegarder</button>
+                        </div>
                     </div>
                 </DialogDescription>
                 </DialogHeader>

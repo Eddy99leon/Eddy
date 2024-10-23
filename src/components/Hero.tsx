@@ -35,7 +35,7 @@ const Hero = () => {
                 </div>
               </div>
               <div>
-                <button className="bg-gray-900 text-white flex items-center gap-1 py-[20px] px-4 rounded-md">
+                <button className="bg-primary text-white flex items-center gap-1 py-[20px] px-4 rounded-md">
                   <Download size={17} />
                   <span className="text-sm">
                     Download CV
