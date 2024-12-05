@@ -13,7 +13,7 @@ import { Languages } from "lucide-react";
 
 
 const Language = () => {
-  const [ t, i18n ] = useTranslation("global")
+  const [ t, i18n ] = useTranslation()
   const [position, setPosition] = useState("en")
 
   useEffect(()=>{
@@ -28,7 +28,7 @@ const Language = () => {
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Languages</DropdownMenuLabel>
+        <DropdownMenuLabel>{t("Languages")}</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
           <DropdownMenuRadioItem value="en">Anglais</DropdownMenuRadioItem>

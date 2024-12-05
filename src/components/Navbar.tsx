@@ -40,7 +40,7 @@ const Navbar = () => {
             </div>
             <div className="space-x-1">
               <span className="">
-                Phone:
+                {t("Phone")}:
               </span>
               <span className="font-meduim">
                 034 50 117 05
