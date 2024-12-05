@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { navItems } from "@/constants/menu.ts"
+import { navItems } from "@/constants/global"
 import { Facebook, Github, Gitlab, Linkedin, ScanFace } from "lucide-react";
 import { Link } from "react-router-dom";
 import Language from "./Language";

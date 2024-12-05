@@ -1,3 +1,4 @@
+import { iconSkills } from "@/constants/global"
 
 
 const Experience = () => {
@@ -12,12 +13,168 @@ const Experience = () => {
                     Lorem ipsum dolor, sit amet consectetur adipisicing.
                 </h4>
             </div>
-            <div className="flex items-center gap-2">
-                <div className="flex-1 bg-green-200">
-                    Experience
+            <div className="flex gap-2">
+                <div className="flex-1 space-y-3">
+                    <div className="rounded py-3 pr-3">
+                        <div className="flex gap-1">
+                            <h1 className="font-semibold">
+                                Poste:
+                            </h1>
+                            <h1 className="text-blue-700">
+                                Développeur Fullstack React / Symfony
+                            </h1>
+                        </div>
+                        <div className="flex gap-1">
+                            <h1 className="font-semibold">
+                                Entreprise:
+                            </h1>
+                            <h1>
+                                SK'HAY 
+                                <span>
+
+                                </span>
+                            </h1>
+                        </div>
+                        <div className="flex gap-1">
+                            <h1 className="font-semibold">
+                                Date:
+                            </h1>
+                            <h1>
+                                Mars 2024 - Maintenant
+                            </h1>
+                        </div>
+                        <div className="flex gap-1">
+                            <h1 className="font-semibold">
+                                Type:
+                            </h1>
+                            <h1>
+                                CDI
+                            </h1>
+                        </div>
+                        <p className="text-sm text-gray-500 text-justify mb-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                        <div className="flex gap-3">
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                React.Js
+                            </span>
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                Material Ui
+                            </span>
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                Javascript
+                            </span>
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                PHP
+                            </span>
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                Symfony
+                            </span>
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                Pusher
+                            </span>
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                MySQL
+                            </span>
+                        </div>
+                    </div>
+                    <div className="rounded py-3 pr-3">
+                        <div className="flex gap-1">
+                            <h1 className="font-semibold">
+                                Poste:
+                            </h1>
+                            <h1 className="text-blue-700">
+                                Développeur Fullstack React / Node.Js
+                            </h1>
+                        </div>
+                        <div className="flex gap-1">
+                            <h1 className="font-semibold">
+                                Entreprise:
+                            </h1>
+                            <h1>
+                                HAISOA
+                                <span>
+
+                                </span>
+                            </h1>
+                        </div>
+                        <div className="flex gap-1">
+                            <h1 className="font-semibold">
+                                Date:
+                            </h1>
+                            <h1>
+                                Jul 2023 - Oct 2023
+                            </h1>
+                        </div>
+                        <div className="flex gap-1">
+                            <h1 className="font-semibold">
+                                Type:
+                            </h1>
+                            <h1>
+                                Stage
+                            </h1>
+                        </div>
+                        <p className="text-sm text-gray-500 text-justify mb-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                        <div className="flex gap-3">
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                React.Js
+                            </span>
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                Tailwind
+                            </span>
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                Javascript
+                            </span>
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                Node.js
+                            </span>
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                Express.Js
+                            </span>
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                JWT
+                            </span>
+                            <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                                MySQL
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex-1 bg-red-200">
-                    Scolarité
+                <div className="flex-1 bg-white rounded-md shadow p-3">
+                    <h1 className="mb-3 text-xl font-semibold">
+                        Skills :
+                    </h1>
+                    <div className="flex flex-wrap gap-3">
+                        { iconSkills.map((skill) => {
+                            return (
+                                <div 
+                                    key={skill.id} 
+                                    className="flex flex-col items-center justify-center gap-2 border w-16 h-16 rounded"
+                                >
+                                    <img 
+                                        src={skill.link} 
+                                        alt={skill.name} 
+                                        className="w-6 h-6" 
+                                    />
+                                    <span className="text-xs font-medium">
+                                        {skill.name}
+                                    </span>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ const Projects = () => {
                     Lorem ipsum dolor, sit amet consectetur adipisicing.
                 </h4>
             </div>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="space-y-6">
                 <ProjectItem />
                 <ProjectItem />
             </div>

@@ -28,6 +28,13 @@ const About = () => {
           </h4>
         </div>
         <div className="flex items-center gap-2">
+          <div className="flex-1 flex justify-start">
+            <img 
+              src={aboutImg} 
+              alt="about image"
+              className="w-[350px] rounded-lg"
+            />
+          </div>
           <div className="flex-1">
             <h1 className="text-6xl font-medium mb-3">
               Eddy Léon
@@ -35,23 +42,23 @@ const About = () => {
             <h2 className="text-2xl font-medium text-gray-400 mb-3">
               Frontend Developer
             </h2>
-            <p className="max-w-[450px] mb-3 text-gray-300 border-l-2 border-gray-600 pl-2">
+            <p className="mb-3 text-gray-300 border-l-2 border-gray-600 pl-2 text-justify">
               Back in 2020, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. 
               Fast-forward to today, and I’ve had the privilege.
             </p>
-            <p className="max-w-[450px] text-gray-300 border-l-2 border-gray-500 pl-2">
+            <p className="text-gray-300 border-l-2 border-gray-500 pl-2 text-justify">
               Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. 
               Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, 
               a start-up, a huge corporation, and a digital product studio.
             </p>
           </div>
-          <div className="flex-1 flex justify-center">
+          {/* <div className="flex-1 flex justify-center">
             <img 
               src={aboutImg} 
               alt="about image"
               className="w-[350px] rounded-lg"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
