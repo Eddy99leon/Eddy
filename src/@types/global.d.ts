@@ -10,3 +10,21 @@ export type NavItemType = {
     name: string;
     link: string;
 };
+
+export type ColorType = {
+    id: number;
+    name: string;
+    value: string;
+};
+
+export type ThemeType = {
+    id: number;
+    name: string;
+    value: "dark" | "light";
+};
+
+export type RadiusType = {
+    id: number;
+    name: "sm" | "md" | "lg" | "xl";
+    value: string;
+};

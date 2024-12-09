@@ -1,4 +1,5 @@
 import { iconSkills } from "@/constants/global"
+import Skills from "./Skills"
 
 
 const Experience = () => {
@@ -7,7 +8,7 @@ const Experience = () => {
         <div className="container py-10">
             <div className="mb-14 text-center">
                 <h3 className="text-xl">
-                    Experience et Scolarité
+                    Experience et Compétence
                 </h3>
                 <h4 className="text-gray-600">
                     Lorem ipsum dolor, sit amet consectetur adipisicing.
@@ -153,28 +154,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className="flex-1 bg-white rounded-md shadow p-3">
-                    <h1 className="mb-3 text-xl font-semibold">
-                        Skills :
-                    </h1>
-                    <div className="flex flex-wrap gap-3">
-                        { iconSkills.map((skill) => {
-                            return (
-                                <div 
-                                    key={skill.id} 
-                                    className="flex flex-col items-center justify-center gap-2 border w-16 h-16 rounded"
-                                >
-                                    <img 
-                                        src={skill.link} 
-                                        alt={skill.name} 
-                                        className="w-6 h-6" 
-                                    />
-                                    <span className="text-xs font-medium">
-                                        {skill.name}
-                                    </span>
-                                </div>
-                            )
-                        })}
-                    </div>
+                    <Skills />
                 </div>
             </div>
         </div>

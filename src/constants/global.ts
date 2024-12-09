@@ -22,7 +22,7 @@ import xampp from "../assets/icon/xampp.svg"
 import postman from "../assets/icon/postman.svg"
 import bootstrap from "../assets/icon/bootstrap.svg"
 import typescript from "../assets/icon/typescript.svg"
-import { IconSkillType, NavItemType } from "../@types/global"
+import { ColorType, IconSkillType, NavItemType, RadiusType, ThemeType } from "../@types/global"
 
 export const navItems : NavItemType[] = [
     {
@@ -66,5 +66,24 @@ export const iconSkills : IconSkillType[] = [
     { id: 21, name: "Pusher", link: pusher, type: "other" },
     { id: 22, name: "XAMPP", link: xampp, type: "tool" },
     { id: 23, name: "Figma", link: figma, type: "tool" },
-    { id: 24, name: "Postman", link: postman, type: "tool" },
+    // { id: 24, name: "Postman", link: postman, type: "tool" },
 ]
+
+export const colors : ColorType[] = [
+    { id: 1, name: "Rouge", value: "#FF0000" },
+    { id: 2, name: "Bleu", value: "#0000FF" },
+    { id: 3, name: "Orange", value: "#FFA500" },
+    { id: 4, name: "Jaune", value: "#FFFF00" },
+];
+
+export  const themes : ThemeType[] = [
+    { id: 1, name: "Dark", value: "dark" },
+    { id: 2, name: "Light", value: "light" },
+];
+
+export const raduis : RadiusType[] = [
+    { id: 1, name: "sm", value: "4px" },
+    { id: 2, name: "md", value: "6px" },
+    { id: 3, name: "lg", value: "8px" },
+    { id: 4, name: "xl", value: "10px" },
+];

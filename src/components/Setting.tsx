@@ -1,33 +1,24 @@
 import {
     Dialog,
+    DialogClose,
     DialogContent,
     DialogDescription,
     DialogHeader,
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
+import { colors, raduis, themes } from "@/constants/global";
 import { useTheme } from "@/contexts/ThemeContext";
+import { getIcon } from "@/lib";
 import { Settings } from "lucide-react";
+import { useState } from "react";
 
 const Setting = () => {
   const { setTheme } = useTheme();
-
-  const couleurs = [
-    { id: 1, name: "Rouge", value: "#FF0000" },
-    { id: 2, name: "Bleu", value: "#0000FF" },
-    { id: 3, name: "Orange", value: "#FFA500" },
-    { id: 4, name: "Jaune", value: "#FFFF00" },
-  ];
-  const modes = [
-    { id: 1, name: "Dark", value: "light" },
-    { id: 2, name: "Light", value: "dark" },
-  ];
-//   const raduis = [
-//     { id: 1, name: "sm", value: "#FF0000" },
-//     { id: 2, name: "md", value: "#0000FF" },
-//     { id: 3, name: "lg", value: "#0000FF" },
-//     { id: 4, name: "xl", value: "#0000FF" },
-//   ];
+  
+  const [selectedRadiusId, setSelectedRadiusId] = useState<number | null>(null);
+  const [selectedColorId, setSelectedColorId] = useState<number | null>(null);
+  const [selectedThemeId, setSelectedThemeId] = useState<number | null>(null);
 
   return (
     <div>
@@ -37,87 +28,117 @@ const Setting = () => {
             </DialogTrigger>
             <DialogContent>
                 <DialogHeader>
-                <DialogTitle className="mb-6">
+                <DialogTitle className="mb-4">
                     Settings:
                 </DialogTitle>
-                <DialogDescription>
-                    <div className="space-y-6">
+                <DialogDescription className="mb-4">
+                    <div className="space-y-4">
                         <div>
                             <h2 className="mb-2">
-                                Couleur
+                                Dark Mode :
                             </h2>
-                            <div className="flex flex-wrap gap-2">
-                                { couleurs?.map((couleur) => {
+                            <div className="flex flex-wrap gap-4">
+                                {themes?.map((theme) => {
+                                    const isActive = theme.id === selectedThemeId;
                                     return (
-                                        <div 
-                                            key={couleur.id}
-                                            className="flex items-center gap-1 border rounded-2xl px-2 py-2 cursor-pointer"
+                                        <div
+                                            key={theme.id}
+                                            onClick={() => {
+                                                setSelectedThemeId(theme.id);
+                                                setTheme(theme.value);
+                                            }}
+                                            className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-2xl ${
+                                                isActive
+                                                    ? "border border-blue-600"
+                                                    : "border border-gray-300"
+                                            }`}
                                         >
-                                            <div  
-                                                className="w-4 h-4 rounded-full"
-                                                style={{ backgroundColor: couleur.value }}
-                                                title={couleur.name}
+                                            {getIcon(theme.value)}
+                                            <span className="text-sm">
+                                                {theme.name}
+                                            </span>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="mb-2">
+                                Border Raduis :
+                            </h2>
+                            <div className="flex flex-wrap gap-4">
+                                {raduis?.map((radui) => {
+                                    const isActive = radui.id === selectedRadiusId;
+                                    return (
+                                        <div
+                                            key={radui.id}
+                                            onClick={() => setSelectedRadiusId(radui.id)}
+                                            className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-2xl ${
+                                                isActive
+                                                    ? "border border-blue-600"
+                                                    : "border border-gray-300"
+                                            }`}
+                                        >
+                                            <input
+                                                type="radio"
+                                                name="radius"
+                                                checked={isActive}
+                                                onChange={() => setSelectedRadiusId(radui.id)}
+                                                className="w-4 h-4 text-blue-500 bg-white border-gray-300 rounded-full"
                                             />
-                                            <span className="text-xs">
-                                                {couleur.name}
+                                            <span className="text-sm">
+                                                {radui.name}
                                             </span>
                                         </div>
-                                    )
+                                    );
                                 })}
                             </div>
                         </div>
                         <div>
                             <h2 className="mb-2">
-                                Dark Mode
+                                Couleur :
                             </h2>
-                            <div className="flex flex-wrap gap-2">
-                                { modes?.map((mode) => {
+                            <div className="flex flex-wrap gap-4">
+                                {colors?.map((color) => {
+                                    const isActive = color.id === selectedColorId;
                                     return (
-                                        <div 
-                                            key={mode.id}
-                                            className="flex items-center gap-1 border rounded-2xl px-2 py-2 cursor-pointer"
+                                        <div
+                                            key={color.id}
+                                            onClick={() => setSelectedColorId(color.id)}
+                                            className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-2xl ${
+                                                isActive
+                                                    ? "border border-blue-600"
+                                                    : "border border-gray-300"
+                                            }`}
                                         >
-                                            <span 
-                                                className="text-xs"
-                                                onClick={() => setTheme("light")}
-                                            >
-                                                {mode.name}
+                                            <div
+                                                className="w-4 h-4 rounded-full"
+                                                style={{ backgroundColor: color.value }}
+                                                title={color.name}
+                                            />
+                                            <span className="text-sm">
+                                                {color.name}
                                             </span>
                                         </div>
-                                    )
+                                    );
                                 })}
-                                <button onClick={() => setTheme("dark")}>
-                                    Dark
-                                </button>
-                                <button onClick={() => setTheme("light")}>
-                                    light
-                                </button>
                             </div>
-                        </div>
-                        <div>
-                            <h2>Language</h2>
-                            <div className="space-x-8">
-                                <button onClick={() => setTheme("light")}>
-                                    Anglais
-                                </button>
-                                <button onClick={() => setTheme("dark")}>
-                                    Français
-                                </button>
-                                <button onClick={() => setTheme("green")}>
-                                    Malagasy
-                                </button>
-                            </div>
-                        </div>
-                        <div className="space-x-8">
-                            <button onClick={() => setTheme("light")}>
-                                Annuler
-                            </button>
-                            <button onClick={() => setTheme("dark")}>
-                                Sauvegarder
-                            </button>
                         </div>
                     </div>
                 </DialogDescription>
+                <div className="flex justify-between items-center pt-6">
+                    <DialogClose asChild>
+                        <button className="border w-36 py-2 rounded-md">
+                            Annuler
+                        </button>
+                    </DialogClose>
+                    <button 
+                        onClick={() => {}}
+                        className="bg-blue-100 border w-36 py-2 rounded-md"
+                    >
+                        Sauvegarder
+                    </button>
+                </div>
                 </DialogHeader>
             </DialogContent>
         </Dialog>

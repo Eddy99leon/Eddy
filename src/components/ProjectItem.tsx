@@ -5,33 +5,33 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import { Linkedin } from "lucide-react"
+import { Code, Info, Play } from "lucide-react"
   
 const ProjectItem = () => {
   return (
-    <div className="flex w-full gap-3 bg-gray-50 rounded shadow overflow-hidden">
-        <div className="flex-1">
-            <Carousel className="w-[500px]">
+    <div className="flex w-full gap-3 bg-white rounded-xl shadow overflow-hidden p-5">
+        <div className="flex-1 rounded">
+            <Carousel className="w-[400px] rounded-xl">
                 <CarouselContent>
                     <CarouselItem>
                         <img 
                             src="https://i.ytimg.com/vi/HfJjzmSaLuQ/maxresdefault.jpg" 
                             alt="" 
-                            className="w-[550px] h-[400px]"
+                            className="w-[450px] h-[270px] rounded-xl"
                         />
                     </CarouselItem>
                     <CarouselItem>
                         <img 
                             src="https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2021/01/blog-4-1.jpg" 
                             alt="" 
-                            className="w-[550px] h-[400px]"
+                            className="w-[450px] h-[270px] rounded-xl"
                         />
                     </CarouselItem>
                     <CarouselItem>
                         <img 
                             src="https://repository-images.githubusercontent.com/587272706/d6f74c74-bd1d-44dd-a601-1c4d73b6e29a" 
                             alt="" 
-                            className="w-[550px] h-[400px]"
+                            className="w-[450px] h-[270px] rounded-xl"
                         />
                     </CarouselItem>
                 </CarouselContent>
@@ -39,98 +39,67 @@ const ProjectItem = () => {
                 <CarouselNext />
             </Carousel>
         </div>
-        <div className="flex-1 flex flex-col justify-between py-3 px-4">
-            <div className="space-y-1">
-                <div className="flex gap-1">
-                    <h1 className="font-semibold">
-                        Nom du projet:
-                    </h1>
-                    <h1>
-                        Madagascar
-                    </h1>
-                </div>
-                <div className="flex gap-1">
-                    <h1 className="font-semibold">
-                        Date de création:
-                    </h1>
-                    <h1>
-                        2023
-                    </h1>
-                </div>
-                <div className="flex gap-1">
-                    <h1 className="font-semibold">
-                        Objectif:
-                    </h1>
-                    <h1>
-                        Plateforme de gestion des ressources touristiques.
-                    </h1>
-                </div>
-                <p className="text-gray-500 text-sm text-justify">
+        <div className="flex-1 flex flex-col justify-between">
+            <div className="mb-2">
+                <h2 className="text-xl text-blue-700">
+                    Madagascar
+                </h2>
+                <h4 className="mb-2">
+                    Plateforme de gestion des ressources touristiques.
+                </h4>
+                <p className="text-gray-400 text-sm text-justify">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum!
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum!
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet.
+                    Lorem ipsum dolor sit amet consectetur.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                    <div className="hover:bg-blue-50 p-3 rounded-md border">
-                        <Linkedin size={22} />
-                    </div>
-                    <div className="hover:bg-blue-50 p-3 rounded-md border">
-                        <Linkedin size={22} />
-                    </div>
-                    <div className="hover:bg-blue-50 p-3 rounded-md border">
-                        <Linkedin size={22} />
-                    </div>
-                    <div className="hover:bg-blue-50 p-3 rounded-md border">
-                        <Linkedin size={22} />
-                    </div>
-                    <div className="hover:bg-blue-50 p-3 rounded-md border">
-                        <Linkedin size={22} />
-                    </div>
-                    <div className="hover:bg-blue-50 p-3 rounded-md border">
-                        <Linkedin size={22} />
-                    </div>
-                    <div className="hover:bg-blue-50 p-3 rounded-md border">
-                        <Linkedin size={22} />
-                    </div>
-                    <div className="hover:bg-blue-50 p-3 rounded-md border">
-                        <Linkedin size={22} />
-                    </div>
-                    <div className="hover:bg-blue-50 p-3 rounded-md border">
-                        <Linkedin size={22} />
-                    </div>
-                    {/* <Badge variant="outline">
-                        lucide
-                    </Badge> */}
+            </div>
+            <div className="bg-blue-50 flex justify-between p-2 mb-4 text-sm">
+                <div>
+                    <h1>
+                        Réalisation:
+                    </h1>
+                    <p className="text-gray-500">
+                        7 mois
+                    </p>
+                </div>
+                <div>
+                    <h1>
+                        type de projet:
+                    </h1>
+                    <p className="text-gray-500">
+                        Personnels.
+                    </p>
+                </div>
+                <div>
+                    <h1>
+                        Niveau :
+                    </h1>
+                    <p className="text-gray-500">
+                        Facile.
+                    </p>
                 </div>
             </div>
             <div className="flex justify-between items-center">
-                <a 
-                    href="https://monprojetmadagascar.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-blue-500 underline"
-                >
-                    Demo
-                </a>
-                <a 
-                    href="https://monprojetmadagascar.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="ml-4 text-blue-500 underline"
-                >
-                    Detail du projet
-                </a>
-                <a 
-                    href="https://github.com/username/madagascar" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="ml-4 text-blue-500 underline"
-                >
-                    Code source
-                </a>
+                <button className="group flex items-center gap-1 px-3 py-2 border hover:bg-blue-50">
+                    <Play size={18} className="text-blue-700 transition-transform duration-500 group-hover:scale-125" /> 
+                    <span className="text-gray-600">
+                        Demo
+                    </span>
+                </button>
+                <button className="group flex items-center gap-1 px-3 py-2 border hover:bg-blue-50">
+                    <Info size={18} className="text-blue-700 transition-transform duration-500 group-hover:scale-125" />
+                    <span className="text-gray-600">
+                        Detail
+                    </span>
+                </button>
+                <button className="group flex items-center gap-1 px-3 py-2 border hover:bg-blue-50">
+                    <Code size={18} className="text-blue-700 transition-transform duration-500 group-hover:scale-125" />
+                    <span className="text-gray-600">
+                        Code
+                    </span>
+                </button>
             </div>
         </div>
     </div>
