@@ -9,8 +9,8 @@ import { Code, Info, Play } from "lucide-react"
   
 const ProjectItem = () => {
   return (
-    <div className="flex w-full gap-3 bg-white rounded-xl shadow overflow-hidden p-5">
-        <div className="flex-1 rounded">
+    <div className="block md:flex w-full gap-3 bg-white rounded-xl shadow overflow-hidden p-5">
+        <div className="flex-1 rounded mb-4 md:mb-0">
             <Carousel className="w-[400px] rounded-xl">
                 <CarouselContent>
                     <CarouselItem>

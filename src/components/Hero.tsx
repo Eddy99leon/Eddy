@@ -1,48 +1,49 @@
 import avatar from "@/assets/avatar.jpg"
-import { Download } from "lucide-react"
+import { ContactRound, Download } from "lucide-react"
 
 const Hero = () => {
   return (
     <div className="bg_svg">
       <div className="container py-20">
-        <div className="text-center">
-          <div className="flex justify-center mb-6">
+        <div className="flex items-center justify-around">
+          <div>
+            <h3 className="text-gray-600 tracking-wide">
+              Hey, I'm
+            </h3>
+            <h1 className="text-6xl font-semibold mb-2 tracking-wide">
+              Eddy Léon
+            </h1>
+            <h2 className="text-gray-600 text-2xl tracking-wide mb-2">
+              Développeur Fullstack.
+            </h2>
+            <hr className="border-t-2 bg-blue-700 mb-2 max-w-36 h-[6px] " />
+            <p className="max-w-[450px] text-gray-500 mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </p>
+            <div className="flex items-center gap-8">
+              <button className="bg-blue-700 text-white flex items-center gap-1 py-3 px-4 rounded">
+                <ContactRound size={17} />
+                <span className="text-sm">
+                  Contact Me
+                </span>
+              </button>
+              <button className="bg-gray-200 text-black flex items-center gap-1 py-3 px-4 rounded border">
+                <Download size={17} />
+                <span className="text-sm">
+                  Download CV
+                </span>
+              </button>
+            </div>
+          </div>
+          <div className="hidden md:block">
             <img 
               src={avatar} 
-              className="w-20 h-20 rounded-full shadow-xl"
+              className="w-[300px] h-[300px] shadow-xl rounded-lg"
               alt="avatar" 
             />
-          </div>
-          <div className="text-xl font-medium mb-4">
-            <h3>Salut, Je suis <span className="font-semibold">Eddy</span> 🤟</h3>
-          </div>
-          <div className="font-medium mb-7">
-            <h1 className="text-6xl">
-              Dévellopeur
-            </h1>
-            <h1 className="text-6xl">
-              Frontend
-            </h1>
-          </div>
-          <div className="flex justify-center">
-            <div className="flex items-center gap-4">
-              <div className="space-y-1 text-sm">
-                <div className="bg-green-100 py-1 px-3 rounded-sm border border-green-300">
-                  <span className="font-medium">1 year +</span> d'exp
-                </div>
-                <div className="bg-red-100 py-1 px-3 rounded-sm border border-red-300">
-                  <span className="font-medium">+ 27</span> project
-                </div>
-              </div>
-              <div>
-                <button className="bg-primary text-white flex items-center gap-1 py-[20px] px-4 rounded-md">
-                  <Download size={17} />
-                  <span className="text-sm">
-                    Download CV
-                  </span>
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>

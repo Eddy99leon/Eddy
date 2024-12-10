@@ -38,7 +38,7 @@ const Navbar = () => {
                 Eddy@gmail.com
               </span>
             </div>
-            <div className="space-x-1">
+            <div className="hidden md:block space-x-1">
               <span className="">
                 {t("Phone")}:
               </span>
@@ -55,13 +55,13 @@ const Navbar = () => {
           <div className="flex items-center gap-14">
             <div className="flex items-center gap-1">
               <div>
-                <ScanFace size={32} />
+                <ScanFace size={32} className="text-blue-800" />
               </div>
-              <p className="text-3xl font-medium">
-                Eddy
+              <p className="text-3xl font-medium tracking-wider">
+                Ed.
               </p>
             </div>
-            <div className="flex gap-6">
+            <div className="hidden md:flex gap-6">
               {
                 navItems.map((item) => {
                   return(

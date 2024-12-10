@@ -13,8 +13,8 @@ const Footer = () => {
                 <div>
                   <ScanFace size={28} />
                 </div>
-                <p className="text-2xl font-medium">
-                  Eddy
+                <p className="text-2xl font-medium tracking-wider">
+                  Ed.
                 </p>
               </div>
               <p className="max-w-[400px] text-gray-400">

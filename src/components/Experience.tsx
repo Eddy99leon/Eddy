@@ -1,6 +1,4 @@
-import { iconSkills } from "@/constants/global"
 import Skills from "./Skills"
-
 
 const Experience = () => {
   return (
@@ -14,8 +12,8 @@ const Experience = () => {
                     Lorem ipsum dolor, sit amet consectetur adipisicing.
                 </h4>
             </div>
-            <div className="flex gap-2">
-                <div className="flex-1 space-y-3">
+            <div className="block md:flex md:gap-2">
+                <div className="flex-1 space-y-3 mb-8 md:mb-0">
                     <div className="rounded py-3 pr-3">
                         <div className="flex gap-1">
                             <h1 className="font-semibold">
@@ -60,7 +58,7 @@ const Experience = () => {
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </p>
-                        <div className="flex gap-3">
+                        <div className="flex flex-wrap gap-3">
                             <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
                                 React.Js
                             </span>
@@ -128,7 +126,7 @@ const Experience = () => {
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </p>
-                        <div className="flex gap-3">
+                        <div className="flex flex-wrap gap-3">
                             <span className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
                                 React.Js
                             </span>

@@ -128,13 +128,13 @@ const Setting = () => {
                 </DialogDescription>
                 <div className="flex justify-between items-center pt-6">
                     <DialogClose asChild>
-                        <button className="border w-36 py-2 rounded-md">
+                        <button className="border w-36 py-2 rounded">
                             Annuler
                         </button>
                     </DialogClose>
                     <button 
                         onClick={() => {}}
-                        className="bg-blue-100 border w-36 py-2 rounded-md"
+                        className="bg-gray-100 border w-36 py-2 rounded"
                     >
                         Sauvegarder
                     </button>
