@@ -5,11 +5,11 @@ const Footer = () => {
     <div>
 
       <div className="bg_svg2">
-        <div className="container flex justify-between gap-4 text-white py-16">
+        <div className="container md:flex justify-between gap-4 text-white py-16">
           {/* first */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <div className="flex items-center gap-1">
+          <div className="space-y-4 md:space-y-8">
+            <div>
+              <div className="flex items-center gap-1 mb-2 md:mb-4">
                 <div>
                   <ScanFace size={28} />
                 </div>
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
           {/* second */}
           <div className="">
-            <div className="flex gap-6 mb-6">
+            <div className="hidden md:flex gap-6 mb-6">
               <div>
                 Home
               </div>
@@ -53,7 +53,7 @@ const Footer = () => {
                 Blog
               </div>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-4 mt-4 md:mt-0">
               <div className="flex gap-1 items-center">
                 <Languages size={20} />
                 <p>
@@ -73,13 +73,13 @@ const Footer = () => {
 
 
       <div className="bg-black border-t border-gray-700">
-        <div className="container flex justify-between items-center text-white py-4">
-          <div>
-            copyright. All droits sont reserved
-          </div>
-          <div>
-            Coder avec le coeur par Eddy A.
-          </div>
+        <div className="container md:flex justify-between items-center text-white py-4">
+          <p className="text-center md:text-left">
+            Copyright. Tous droits sont reservés.
+          </p>
+          <p className="hidden md:block">
+            Coder avec le coeur par Eddy.
+          </p>
         </div>
       </div>
 

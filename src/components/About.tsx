@@ -28,7 +28,7 @@ const About = () => {
           </h4>
         </div>
         <div className="flex items-center gap-2">
-          <div className="flex-1 flex justify-start">
+          <div className="flex-1 hidden md:flex justify-start">
             <img 
               src={aboutImg} 
               alt="about image"
@@ -36,9 +36,6 @@ const About = () => {
             />
           </div>
           <div className="flex-1">
-            <h1 className="text-6xl font-medium mb-3">
-              Eddy Léon
-            </h1>
             <h2 className="text-2xl font-medium text-gray-400 mb-3">
               Frontend Developer
             </h2>
@@ -52,13 +49,6 @@ const About = () => {
               a start-up, a huge corporation, and a digital product studio.
             </p>
           </div>
-          {/* <div className="flex-1 flex justify-center">
-            <img 
-              src={aboutImg} 
-              alt="about image"
-              className="w-[350px] rounded-lg"
-            />
-          </div> */}
         </div>
       </div>
     </div>
