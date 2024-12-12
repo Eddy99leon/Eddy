@@ -1,7 +1,10 @@
 import { AtSign, Facebook, Github, Gitlab, Linkedin, MoveRight, Phone } from "lucide-react"
 import contactBg from "@/assets/bg5.svg"
+import { useTranslation } from "react-i18next"
 
 const Contact = () => {
+  const { t } = useTranslation()
+
   return (
     <div>
       <div 
@@ -12,7 +15,7 @@ const Contact = () => {
           <div className="container space-y-24 pt-48 pb-10">
             <div className="space-y-2">
               <h1 className="text-5xl font-medium">
-                Contact Me
+                {t("contactMe")}
               </h1>
               <h3 className="text-xl">
                 Looking for a Developer.
@@ -58,7 +61,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h1>
-                    Phone
+                    {t("phone")}
                   </h1>
                   <p className="text-gray-600">
                     +261 34 50 117 05
@@ -71,10 +74,10 @@ const Contact = () => {
                 </div>
                 <div>
                   <h1>
-                    Email
+                    {t("email")}
                   </h1>
                   <p className="text-gray-600">
-                    Eddy@gmail.com
+                    leoneddy504@gmail.com
                   </p>
                 </div>
               </div>
@@ -93,14 +96,14 @@ const Contact = () => {
                   <input 
                     type="text" 
                     name="name" 
-                    placeholder="Your Name" 
+                    placeholder={t("Yname")}
                     spellCheck="false"
                     className="flex-1 bg-gray-100 px-3 py-4 rounded-sm border-none outline-none"
                   />
                   <input 
                     type="email" 
                     name="email" 
-                    placeholder="Your Email" 
+                    placeholder={t("Ymail")} 
                     spellCheck="false"
                     className="flex-1 bg-gray-100 px-3 py-4 rounded-sm border-none outline-none"
                   />
@@ -109,14 +112,14 @@ const Contact = () => {
                   <input 
                     type="text" 
                     name="company" 
-                    placeholder="Your Company" 
+                    placeholder={t("Ycompany")} 
                     spellCheck="false"
                     className="flex-1 bg-gray-100 px-3 py-4 rounded-sm border-none outline-none"
                   />
                   <input 
                     type="text" 
                     name="phone" 
-                    placeholder="Your Phone" 
+                    placeholder={t("Yphone")} 
                     spellCheck="false"
                     className="flex-1 bg-gray-100 px-3 py-4 rounded-sm border-none outline-none"
                   />
@@ -125,13 +128,13 @@ const Contact = () => {
                   <textarea 
                     name="object" 
                     id="object" 
-                    placeholder="Enter Message" 
+                    placeholder={t("Ymessage")}
                     className="w-full min-h-52 bg-gray-100 px-3 py-4 rounded-sm border-none outline-none"
                   />
                 </div>
                 <div>
                   <button className="bg-blue-900 text-white w-full py-3 rounded-sm">
-                    Send Message
+                    {t("sendMess")}
                   </button>
                 </div>
               </form>

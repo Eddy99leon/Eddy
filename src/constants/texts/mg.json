@@ -1,5 +1,23 @@
 {
+    "hi": "Salama, izaho dia",
+    "post": "Mpamorona Tranokala Fullstack.",
+    "contactMe": "Hifandray amiko",
+    "downCV": "Hisintona CV",
+    "home": "Fandraisana",
+    "contact": "Fifandraisana",
+    "blog": "Bilaogy",
+    "email": "Mailaka",
+    "phone": "Telefaonina",
+    "sendMess": "Alefaso ny hafatra",
+    "Yname": "Anaranao",
+    "Ymail": "Mailakao",
+    "Ycompany": "Orinasanao",
+    "Yphone": "Telefaoninao",
+    "Ymessage": "Ampidiro ny hafatra",
+    "ang": "anglisy",
+    "fran": "frantsay",
+    "malg": "malagasy",
+
     "welcome" : "Tongasoa ianareo.",
-    "Languages": "Fiteny",
-    "Phone": "Kotakita"
+    "Languages": "Fiteny"
 }

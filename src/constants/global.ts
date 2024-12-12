@@ -27,17 +27,17 @@ import { ColorType, IconSkillType, NavItemType, RadiusType, ThemeType } from "..
 export const navItems : NavItemType[] = [
     {
         id: 1,
-        name: "Home",
+        name: "home",
         link: "/"
     },
     {
         id: 2,
-        name: "Contact",
+        name: "contact",
         link: "/contact"
     },
     {
         id: 3,
-        name: "Blog",
+        name: "blog",
         link: "/blog"
     }
 ]
