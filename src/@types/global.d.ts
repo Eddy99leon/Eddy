@@ -15,6 +15,7 @@ export type ColorType = {
     id: number;
     name: string;
     value: string;
+    color: string;
 };
 
 export type ThemeType = {

@@ -70,10 +70,12 @@ export const iconSkills : IconSkillType[] = [
 ]
 
 export const colors : ColorType[] = [
-    { id: 1, name: "Rouge", value: "#FF0000" },
-    { id: 2, name: "Bleu", value: "#0000FF" },
-    { id: 3, name: "Orange", value: "#FFA500" },
-    { id: 4, name: "Jaune", value: "#FFFF00" },
+    { id: 1, name: "Red", value: "red", color: "#FF0000" },
+    { id: 2, name: "Blue", value: "blue", color: "#0000FF" },
+    { id: 3, name: "Orange", value: "orange", color: "#FFA500" },
+    { id: 4, name: "Yellow", value: "yellow", color: "#FFFF00" },
+    { id: 5, name: "Green", value: "green", color: "#FFFF00" },
+    { id: 6, name: "Violet", value: "violet", color: "#FFFF00" },
 ];
 
 export  const themes : ThemeType[] = [

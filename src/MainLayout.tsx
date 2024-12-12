@@ -1,11 +1,16 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { Outlet } from "react-router-dom";
-import { ThemeProvider } from "./contexts/ThemeContext";
+import { SettingProvider } from "./contexts/SettingContext";
 
 const MainLayout: React.FC = () => {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="eddy-ui-theme">
+    <SettingProvider 
+      defaultTheme="dark"
+      defaultColor="blue"
+      defaultBorderRadius="md"
+      storageKey="eddy-ui"
+    >
       <div className="bg-gray-50 text-gray-900 w-full min-h-screen flex flex-col justify-between">
         <Navbar />
         <div className="">
@@ -13,7 +18,7 @@ const MainLayout: React.FC = () => {
         </div>
         <Footer />
       </div>
-    </ThemeProvider>
+    </SettingProvider>
   );
 };
 

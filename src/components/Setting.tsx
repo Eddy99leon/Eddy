@@ -8,13 +8,13 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 import { colors, raduis, themes } from "@/constants/global";
-import { useTheme } from "@/contexts/ThemeContext";
+import { BorderRadius, Color, useSetting } from "@/contexts/SettingContext";
 import { getIcon } from "@/lib";
 import { Settings } from "lucide-react";
 import { useState } from "react";
 
 const Setting = () => {
-  const { setTheme } = useTheme();
+  const { color, setColor, setBorderRadius, setTheme } = useSetting();
   
   const [selectedRadiusId, setSelectedRadiusId] = useState<number | null>(null);
   const [selectedColorId, setSelectedColorId] = useState<number | null>(null);
@@ -72,7 +72,10 @@ const Setting = () => {
                                     return (
                                         <div
                                             key={radui.id}
-                                            onClick={() => setSelectedRadiusId(radui.id)}
+                                            onClick={() => {
+                                                setBorderRadius(radui.value as BorderRadius);
+                                                setSelectedRadiusId(radui.id)
+                                            }}
                                             className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-2xl ${
                                                 isActive
                                                     ? "border border-blue-600"
@@ -104,7 +107,10 @@ const Setting = () => {
                                     return (
                                         <div
                                             key={color.id}
-                                            onClick={() => setSelectedColorId(color.id)}
+                                            onClick={() => {
+                                                setColor(color.value as Color);
+                                                setSelectedColorId(color.id)
+                                            }}
                                             className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-2xl ${
                                                 isActive
                                                     ? "border border-blue-600"
@@ -113,7 +119,7 @@ const Setting = () => {
                                         >
                                             <div
                                                 className="w-4 h-4 rounded-full"
-                                                style={{ backgroundColor: color.value }}
+                                                style={{ backgroundColor: color.color }}
                                                 title={color.name}
                                             />
                                             <span className="text-sm">
@@ -123,6 +129,15 @@ const Setting = () => {
                                     );
                                 })}
                             </div>
+                        </div>
+                        <div>
+                            <p>Couleur actuelle : {color}</p>
+                            <button onClick={() => setColor("green")} className="bg-primary text-white p-2 rounded">
+                                Activer le thème vert
+                            </button>
+                            <button onClick={() => setColor("blue")} className="bg-primary text-white p-2 rounded">
+                                Activer le thème bleu
+                            </button>
                         </div>
                     </div>
                 </DialogDescription>

@@ -34,6 +34,26 @@
     --secondary: 240 4.8% 95.9%;
     --accent: 240 4.8% 95.9%;
 }
+.red {
+    --primary: 221, 72%, 43%;
+    --secondary: 240 4.8% 95.9%;
+    --accent: 240 4.8% 95.9%;
+}
+.orange {
+    --primary: 221, 72%, 43%;
+    --secondary: 240 4.8% 95.9%;
+    --accent: 240 4.8% 95.9%;
+}
+.yellow {
+    --primary: 221, 72%, 43%;
+    --secondary: 240 4.8% 95.9%;
+    --accent: 240 4.8% 95.9%;
+}
+.violet {
+    --primary: 221, 72%, 43%;
+    --secondary: 240 4.8% 95.9%;
+    --accent: 240 4.8% 95.9%;
+}
 
 * {
     margin: 0;
