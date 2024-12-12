@@ -18,11 +18,11 @@ import mongodb from "../assets/icon/mongodb.svg"
 import mysql from "../assets/icon/mysql.svg"
 import pusher from "../assets/icon/pusher.svg"
 import xampp from "../assets/icon/xampp.svg"
-// import reactRouter from "../assets/icon/reactRouter.svg"
 // import postman from "../assets/icon/postman.svg"
 import bootstrap from "../assets/icon/bootstrap.svg"
 import typescript from "../assets/icon/typescript.svg"
-import { ColorType, IconSkillType, NavItemType, RadiusType, ThemeType } from "../@types/global"
+import project1 from "../assets/project1.jpg"
+import { ColorType, IconSkillType, NavItemType, ProjectType, RadiusType, ThemeType } from "../@types/global"
 
 export const navItems : NavItemType[] = [
     {
@@ -48,24 +48,23 @@ export const iconSkills : IconSkillType[] = [
     { id: 3, name: "JavaScript", link: javascript, type: "language" },
     { id: 4, name: "TypeScript", link: typescript, type: "language" },
     { id: 5, name: "PHP", link: php, type: "language" },
-    { id: 6, name: "Tailwind", link: tailwind, type: "framework" },
-    { id: 7, name: "Material UI", link: materialUi, type: "framework" },
-    { id: 8, name: "Bootstrap", link: bootstrap, type: "framework" },
-    { id: 9, name: "ReactJS", link: reactjs, type: "framework" },
-    // { id: 10, name: "React Router", link: reactRouter, type: "other" },
-    { id: 11, name: "NodeJS", link: nodejs, type: "language" },
-    { id: 12, name: "ExpressJS", link: expressjs, type: "framework" },
-    { id: 13, name: "Next.js", link: nextjs, type: "framework" },
-    { id: 14, name: "Symfony", link: symfony, type: "framework" },
-    { id: 15, name: "Git", link: git, type: "tool" },
-    { id: 16, name: "GitHub", link: github, type: "tool" },
-    { id: 17, name: "GitLab", link: gitlab, type: "tool" },
-    { id: 18, name: "VS Code", link: vscode, type: "tool" },
-    { id: 19, name: "MongoDB", link: mongodb, type: "database" },
-    { id: 20, name: "MySQL", link: mysql, type: "database" },
-    { id: 21, name: "Pusher", link: pusher, type: "other" },
-    { id: 22, name: "XAMPP", link: xampp, type: "tool" },
-    { id: 23, name: "Figma", link: figma, type: "tool" },
+    { id: 6, name: "NodeJS", link: nodejs, type: "language" },
+    { id: 7, name: "Tailwind", link: tailwind, type: "framework" },
+    { id: 8, name: "Material UI", link: materialUi, type: "framework" },
+    { id: 9, name: "Bootstrap", link: bootstrap, type: "framework" },
+    { id: 10, name: "ReactJS", link: reactjs, type: "framework" },
+    { id: 11, name: "ExpressJS", link: expressjs, type: "framework" },
+    { id: 12, name: "Next.js", link: nextjs, type: "framework" },
+    { id: 13, name: "Symfony", link: symfony, type: "framework" },
+    { id: 14, name: "MongoDB", link: mongodb, type: "database" },
+    { id: 15, name: "MySQL", link: mysql, type: "database" },
+    { id: 16, name: "Git", link: git, type: "tool" },
+    { id: 17, name: "GitHub", link: github, type: "tool" },
+    { id: 18, name: "GitLab", link: gitlab, type: "tool" },
+    { id: 19, name: "VS Code", link: vscode, type: "tool" },
+    { id: 20, name: "XAMPP", link: xampp, type: "tool" },
+    { id: 21, name: "Figma", link: figma, type: "tool" },
+    { id: 22, name: "Pusher", link: pusher, type: "other" },
     // { id: 24, name: "Postman", link: postman, type: "tool" },
 ]
 
@@ -89,3 +88,42 @@ export const raduis : RadiusType[] = [
     { id: 3, name: "lg", value: "8px" },
     { id: 4, name: "xl", value: "10px" },
 ];
+
+export const ProjectList : ProjectType[] = [
+    { 
+        id: 1, 
+        name: "Ohabolana Malagasy",
+        resume: "Platform de gestion de tourisme",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
+        image: project1,
+        delay: "6",
+        type: "personnel",
+        level: "moyen",
+        demo_link: "https://ohabolanagasy.vercel.app/",
+        code_link: ""
+    },
+    { 
+        id: 2, 
+        name: "Madagascar",
+        resume: "Platform de gestion de tourisme",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
+        image: project1,
+        delay: "4",
+        type: "personnel",
+        level: "facile",
+        demo_link: "https://eddy99leon.github.io/Madagascar",
+        code_link: ""
+    },
+    { 
+        id: 3, 
+        name: "Fondroy",
+        resume: "Platform de gestion de tourisme",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
+        image: project1,
+        delay: "5",
+        type: "personnel",
+        level: "difficile",
+        demo_link: "https://fondroy.vercel.app/",
+        code_link: ""
+    }
+]

@@ -29,3 +29,20 @@ export type RadiusType = {
     name: "sm" | "md" | "lg" | "xl";
     value: string;
 };
+
+export interface ProjectType {
+    id: number;
+    name: string;
+    resume: string;
+    description: string;
+    image: string;
+    delay: string;
+    type: "personnel" | "professionnel";
+    level: "facile" | "moyen" | "difficile";
+    demo_link: string;
+    code_link: string;
+}
+
+interface ProjectItemProps {
+    project: ProjectType;
+}

@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { navItems } from "@/constants/global"
 import { Facebook, Github, Gitlab, Linkedin, ScanFace } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Language from "./Language";
 import Setting from "./Setting";
 import Sidebar from "./Sidebar";
@@ -9,6 +9,7 @@ import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   const { t } = useTranslation()
+  const location = useLocation();
 
   return (
     <div>
@@ -64,10 +65,21 @@ const Navbar = () => {
             <div className="hidden md:flex gap-6">
               {
                 navItems.map((item) => {
-                  
+                  const isActive = location.pathname === item.link;
                   return(
-                    <Link to={item.link} key={item.id} className=" text-lg">
+                    <Link 
+                      to={item.link} 
+                      key={item.id} 
+                      className={`text-lg relative transition-all duration-300 ${
+                        isActive
+                          ? "text-blue-600"
+                          : "text-gray-500 hover:text-blue-600"
+                      }`}
+                    >
                       {t(`${item.name}`)}
+                      {isActive && (
+                        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-600 transition-all duration-300"></span>
+                      )}
                     </Link>
                   )
                 })

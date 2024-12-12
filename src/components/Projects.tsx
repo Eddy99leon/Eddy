@@ -1,3 +1,4 @@
+import { ProjectList } from "@/constants/global"
 import ProjectItem from "./ProjectItem"
 
 const Projects = () => {
@@ -13,8 +14,11 @@ const Projects = () => {
                 </h4>
             </div>
             <div className="space-y-6">
-                <ProjectItem />
-                <ProjectItem />
+                { ProjectList.map((project) => {
+                    return(
+                        <ProjectItem project={project} />
+                    )
+                })}
             </div>
         </div>
     </div>

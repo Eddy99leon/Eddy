@@ -1,58 +1,26 @@
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
 import { Code, Info, Play } from "lucide-react"
+import { ProjectItemProps } from "@/@types/global"
   
-const ProjectItem = () => {
+const ProjectItem = ({project}: ProjectItemProps) => {
   return (
-    <div className="block md:flex w-full gap-3 bg-white rounded-xl shadow overflow-hidden p-5">
+    <div className="block md:flex w-full gap-3 bg-white rounded shadow overflow-hidden p-3">
         <div className="flex-1 rounded mb-4 md:mb-0">
-            <Carousel className="w-[400px] rounded-xl">
-                <CarouselContent>
-                    <CarouselItem>
-                        <img 
-                            src="https://i.ytimg.com/vi/HfJjzmSaLuQ/maxresdefault.jpg" 
-                            alt="" 
-                            className="w-[450px] h-[270px] rounded-xl"
-                        />
-                    </CarouselItem>
-                    <CarouselItem>
-                        <img 
-                            src="https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2021/01/blog-4-1.jpg" 
-                            alt="" 
-                            className="w-[450px] h-[270px] rounded-xl"
-                        />
-                    </CarouselItem>
-                    <CarouselItem>
-                        <img 
-                            src="https://repository-images.githubusercontent.com/587272706/d6f74c74-bd1d-44dd-a601-1c4d73b6e29a" 
-                            alt="" 
-                            className="w-[450px] h-[270px] rounded-xl"
-                        />
-                    </CarouselItem>
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-            </Carousel>
+            <img 
+                src={project.image} 
+                alt="project image" 
+                className="w-full h-[250px] rounded"
+            />
         </div>
         <div className="flex-1 flex flex-col justify-between">
             <div className="mb-2">
                 <h2 className="text-xl text-blue-700">
-                    Madagascar
+                    {project.name}
                 </h2>
                 <h4 className="mb-2">
-                    Plateforme de gestion des ressources touristiques.
+                    {project.resume}
                 </h4>
                 <p className="text-gray-400 text-sm text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet.
-                    Lorem ipsum dolor sit amet consectetur.
+                    {project.description}
                 </p>
             </div>
             <div className="bg-blue-50 flex justify-between p-2 mb-4 text-sm">
@@ -61,7 +29,7 @@ const ProjectItem = () => {
                         Réalisation:
                     </h1>
                     <p className="text-gray-500">
-                        7 mois
+                        {project.delay} mois
                     </p>
                 </div>
                 <div>
@@ -69,7 +37,7 @@ const ProjectItem = () => {
                         type de projet:
                     </h1>
                     <p className="text-gray-500">
-                        Personnels.
+                        {project.type}
                     </p>
                 </div>
                 <div>
@@ -77,7 +45,7 @@ const ProjectItem = () => {
                         Niveau :
                     </h1>
                     <p className="text-gray-500">
-                        Facile.
+                        {project.level}
                     </p>
                 </div>
             </div>

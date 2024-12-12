@@ -1,4 +1,6 @@
 import oops from "@/assets/oops.svg"
+import { MoveLeft } from "lucide-react"
+import { Link } from "react-router-dom"
 
 const Blog = () => {
 
@@ -6,20 +8,21 @@ const Blog = () => {
     <div className="container py-16" >
       <div className="flex items-center">
         <div className="flex-1">
-          <div>
-            - retour.
+          <div className="mb-6 cursor-pointer">
+            <Link to="/">
+              <MoveLeft className="text-blue-500 hover:text-blue-700 transition-colors duration-300" />
+            </Link>
           </div>
           <h3 className="text-gray-500">
             Pas de panique !
           </h3>
-          <h2 className="text-4xl font-semibold">
-            Cette page est encours <br />de developpement.
+          <h2 className="text-4xl font-medium mb-2 text-gray-900">
+            Cette page est en cours <br /> de développement.
           </h2>
           <p className="text-sm text-gray-500 mb-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing.
-            Lorem, ipsum dolor sit amet consectetur adipisicing.
-            Lorem, ipsum dolor sit amet consectetur adipisicing.
-            Lorem, ipsum dolor sit amet consectetur adipisicing.
+            Je suis en train de préparer du contenu passionnant pour cette blog ! 
+            Cette page sera bientôt disponible et j'ai hâte de partager avec vous des articles intéressants sur des sujets variés. 
+            En attendant, n'hésitez pas à explorer le reste de mon portfolio !
           </p>
         </div>
         <div className="flex-1 flex items-center justify-center ">
