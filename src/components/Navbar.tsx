@@ -8,7 +8,7 @@ import Sidebar from "./Sidebar";
 
 
 const Navbar = () => {
-  const [ t ] = useTranslation("global")
+  const { t } = useTranslation()
 
   return (
     <div>
@@ -32,18 +32,18 @@ const Navbar = () => {
           <div className="flex gap-3 text-sm">
             <div className="space-x-1">
               <span className="">
-                Email:
+                {t("email")}:
               </span>
               <span className="font-meduim">
-                Eddy@gmail.com
+                leoneddy504@gmail.com
               </span>
             </div>
             <div className="hidden md:block space-x-1">
               <span className="">
-                {t("Phone")}:
+                {t("phone")}:
               </span>
               <span className="font-meduim">
-                034 50 117 05
+                +261 34 50 117 05
               </span>
             </div>
           </div>
@@ -64,9 +64,10 @@ const Navbar = () => {
             <div className="hidden md:flex gap-6">
               {
                 navItems.map((item) => {
+                  
                   return(
                     <Link to={item.link} key={item.id} className=" text-lg">
-                      {item.name}
+                      {t(`${item.name}`)}
                     </Link>
                   )
                 })

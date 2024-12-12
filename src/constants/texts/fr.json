@@ -1,5 +1,23 @@
 {
+  "hi": "Salut, je suis",
+  "post": "Développeur Fullstack.",
+  "contactMe": "Contacte-moi",
+  "downCV": "Télécharge CV",
+  "home": "Accueil",
+  "contact": "Contact",
+  "blog": "Blog",
+  "email": "Email",
+  "phone": "Téléphone",
+  "sendMess": "Envoyer le message",
+  "Yname": "Votre nom",
+  "Ymail": "Votre email",
+  "Ycompany": "Votre entreprise",
+  "Yphone": "Votre téléphone",
+  "Ymessage": "Entrez le message",
+  "ang": "anglais",
+  "fran": "français",
+  "malg": "malgache",
+
   "welcome": "Bienvenue à vous.",
-  "Languages": "Languages",
-  "Phone": "Contact"
+  "Languages": "Languages"
 }

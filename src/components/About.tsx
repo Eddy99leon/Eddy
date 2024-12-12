@@ -1,4 +1,5 @@
 import aboutImg from "@/assets/img1.jpg"
+import { Monitor, Palette, Wrench } from "lucide-react"
 
 const About = () => {
   return (
@@ -19,35 +20,74 @@ const About = () => {
         </div>
       </div>
       <div className="container text-white mt-8">
-        <div className="mb-14 text-center">
-          <h3 className="text-xl">
-            About Me.
+        <div className="mb-12 text-center">
+          <h3 className="text-xl text-blue-500 mb-2">
+            About Me
           </h3>
-          <h4 className="text-gray-400">
+          <h4 className="text-gray-400 text-sm md:text-base">
             Non, vous n'êtes pas prêt à faire ma connaissance 🙂
           </h4>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="flex-1 hidden md:flex justify-start">
+        <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-6">
+          <div className="col-span-1 hidden md:flex justify-start">
             <img 
               src={aboutImg} 
               alt="about image"
               className="w-[350px] rounded-lg"
             />
           </div>
-          <div className="flex-1">
-            <h2 className="text-2xl font-medium text-gray-400 mb-3">
-              Frontend Developer
+          <div className="col-span-2">
+            <h2 className="text-2xl font-medium text-gray-400 mb-2">
+              Bridging Design and Development
             </h2>
-            <p className="mb-3 text-gray-300 border-l-2 border-gray-600 pl-2 text-justify">
+            <p className="italic text-gray-400 mb-3">
+              "Good design is as little design as possible." – Dieter Rams
+            </p>
+            <p className="mb-4 text-gray-300 border-l-2 border-gray-600 pl-2 text-justify text-sm md:text-base">
               Back in 2020, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. 
               Fast-forward to today, and I’ve had the privilege.
             </p>
-            <p className="text-gray-300 border-l-2 border-gray-500 pl-2 text-justify">
-              Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. 
-              Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, 
-              a start-up, a huge corporation, and a digital product studio.
-            </p>
+            <div className="grid grid-cols-3 gap-2">
+              <div className="col-span-1 bg-blue-600 w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-sm pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
+                <div className="bg-blue-500 w-fit rounded-sm p-3 mb-4">
+                  <Palette className="size-4 md:size-5" />
+                </div>
+                <div className="">
+                  <p className="text-gray-300 text-xs md:text-sm lg:text-base">
+                    Creative
+                  </p>
+                  <h2 className="text-gray-100 text-xl md:text-2xl lg:text-3xl whitespace-nowrap">
+                    UI/UX Design
+                  </h2>
+                </div>
+              </div>
+              <div className="col-span-1 bg-gray-700 w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-sm pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
+                <div className="bg-gray-600 w-fit rounded-sm p-3 mb-4">
+                  <Monitor className="size-4 md:size-5" />
+                </div>
+                <div className="">
+                  <p className="text-gray-300 text-xs md:text-sm lg:text-base">
+                    Interactive
+                  </p>
+                  <h2 className="text-gray-100 text-xl md:text-2xl lg:text-3xl whitespace-nowrap">
+                    Interfaces
+                  </h2>
+                </div>
+              </div>
+              <div className="col-span-1 bg-gray-700 w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-sm pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
+                <div className="bg-gray-600 w-fit rounded-sm p-3 mb-4">
+                  <Wrench className="size-4 md:size-5" />
+                </div>
+                <div className="">
+                  <p className="text-gray-300 text-xs md:text-sm lg:text-base">
+                    Robust Backend
+                  </p>
+                  <h2 className="text-gray-100 text-xl md:text-2xl lg:text-3xl whitespace-nowrap">
+                    Development
+                  </h2>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
