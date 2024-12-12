@@ -1,4 +1,4 @@
-import avatar from "@/assets/avatar.jpg"
+import avatar from "@/assets/img1.jpg"
 import { ContactRound, Download } from "lucide-react"
 
 const Hero = () => {
@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="hidden md:block">
             <img 
               src={avatar} 
-              className="w-[300px] h-[300px] shadow-xl rounded-lg"
+              className="w-[300px] shadow-xl rounded-lg"
               alt="avatar" 
             />
           </div>

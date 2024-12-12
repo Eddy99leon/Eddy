@@ -5,7 +5,7 @@ const Experience = () => {
     <div>
         <div className="container py-10">
             <div className="mb-14 text-center">
-                <h3 className="text-xl">
+                <h3 className="text-xl text-blue-500 mb-2">
                     Experience et Compétence
                 </h3>
                 <h4 className="text-gray-600">
