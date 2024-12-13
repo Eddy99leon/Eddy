@@ -1,13 +1,20 @@
-import { Facebook, Github, Gitlab, ScanFace, Languages, Linkedin, Settings } from "lucide-react";
+import { navItems } from "@/constants/global";
+import { Facebook, Github, Gitlab, ScanFace, Linkedin} from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { Link, useLocation } from "react-router-dom";
+import Language from "./Language";
 
 const Footer = () => {
+  const { t } = useTranslation()
+  const location = useLocation();
+
   return (
     <div>
 
       <div className="bg_svg2">
-        <div className="container md:flex justify-between gap-4 text-white py-16">
+        <div className="container md:flex justify-between gap-4 text-white py-14">
           {/* first */}
-          <div className="space-y-4 md:space-y-8">
+          <div className="mb-8 md:mb-0">
             <div>
               <div className="flex items-center gap-1 mb-2 md:mb-4">
                 <div>
@@ -18,68 +25,58 @@ const Footer = () => {
                 </p>
               </div>
               <p className="max-w-[400px] text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-                sit amet consectetur adipisicing.
-                Lorem ipsum  consectetur adipisicing.
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-                sit amet consectetur adipisicing.
+                {t("footerDesc")}
               </p>
-            </div>
-            <div className="flex gap-4">
-              <div>
-                <Facebook size={17} />
-              </div>
-              <div>
-                <Linkedin size={17} />
-              </div>
-              <div>
-                <Github size={17} />
-              </div>
-              <div>
-                <Gitlab size={17} />
-              </div>
             </div>
           </div>
           {/* second */}
-          <div className="">
-            <div className="hidden md:flex gap-6 mb-6">
-              <div>
-                Home
-              </div>
-              <div>
-                Contact
-              </div>
-              <div>
-                Blog
-              </div>
+          <div>
+            <div className="flex gap-6 mb-6 md:mb-10">
+              {
+                navItems.map((item) => {
+                  const isActive = location.pathname === item.link;
+                  return(
+                    <Link 
+                      to={item.link} 
+                      key={item.id} 
+                      className={`transition-all duration-300 ${
+                        isActive
+                          ? "text-blue-500"
+                          : "text-gray-200 hover:text-blue-500"
+                      }`}
+                    >
+                      {t(`${item.name}`)}
+                    </Link>
+                  )
+                })
+              }
             </div>
-            <div className="space-y-4 mt-4 md:mt-0">
-              <div className="flex gap-1 items-center">
-                <Languages size={20} />
-                <p>
-                  Language
-                </p>
-              </div>
-              <div className="flex gap-1 items-center">
-                <Settings size={20} />
-                <p>
-                  Settings
-                </p>
-              </div>
+            <div className="flex gap-8 text-gray-400">
+              <a href="https://www.google.com">
+                <Facebook size={22} />
+              </a>
+              <a href="https://www.google.com">
+                <Linkedin size={22} />
+              </a>
+              <a href="https://www.google.com">
+                <Github size={22} />
+              </a>
+              <a href="https://www.google.com">
+                <Gitlab size={22} />
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-
       <div className="bg-black border-t border-gray-700">
-        <div className="container md:flex justify-between items-center text-white py-4">
-          <p className="text-center md:text-left">
+        <div className="container flex justify-between items-center text-white py-4">
+          <p className="text-sm sm:text-base">
             Copyright. Tous droits sont reservés.
           </p>
-          <p className="hidden md:block">
-            Coder avec le coeur par Eddy.
-          </p>
+          <div>
+            <Language />
+          </div>
         </div>
       </div>
 

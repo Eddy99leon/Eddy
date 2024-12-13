@@ -18,11 +18,11 @@ import mongodb from "../assets/icon/mongodb.svg"
 import mysql from "../assets/icon/mysql.svg"
 import pusher from "../assets/icon/pusher.svg"
 import xampp from "../assets/icon/xampp.svg"
-// import postman from "../assets/icon/postman.svg"
+import postman from "../assets/icon/postman.svg"
 import bootstrap from "../assets/icon/bootstrap.svg"
 import typescript from "../assets/icon/typescript.svg"
 import project1 from "../assets/project1.jpg"
-import { ColorType, IconSkillType, NavItemType, ProjectType, RadiusType, ThemeType } from "../@types/global"
+import { ColorType, ExperienceType, IconSkillType, NavItemType, ProjectType, RadiusType, ThemeType } from "../@types/global"
 
 export const navItems : NavItemType[] = [
     {
@@ -65,7 +65,7 @@ export const iconSkills : IconSkillType[] = [
     { id: 20, name: "XAMPP", link: xampp, type: "tool" },
     { id: 21, name: "Figma", link: figma, type: "tool" },
     { id: 22, name: "Pusher", link: pusher, type: "other" },
-    // { id: 24, name: "Postman", link: postman, type: "tool" },
+    { id: 24, name: "Postman", link: postman, type: "tool" },
 ]
 
 export const colors : ColorType[] = [
@@ -127,3 +127,51 @@ export const ProjectList : ProjectType[] = [
         code_link: ""
     }
 ]
+
+export const experienceLists : ExperienceType[] = [
+    {
+      id: 1,
+      poste: "Développeur Fullstack React / Symfony",
+      entreprise: "SK'HAY",
+      date: "Mars 2024 - Maintenant",
+      type: "CDI",
+      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
+      technologies: [
+        "React.Js",
+        "Material Ui",
+        "Javascript",
+        "PHP",
+        "Symfony",
+        "Pusher",
+        "MySQL",
+      ],
+    },
+    {
+      id: 2,
+      poste: "Développeur Fullstack React / Node.Js",
+      entreprise: "HAISOA",
+      date: "Jul 2023 - Oct 2023",
+      type: "Stage",
+      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
+      technologies: [
+        "React.Js",
+        "Tailwind",
+        "Javascript",
+        "Node.js",
+        "Express.Js",
+        "JWT",
+        "MySQL",
+      ],
+    },
+];
+  

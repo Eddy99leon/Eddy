@@ -1,7 +1,10 @@
 import aboutImg from "@/assets/img1.jpg"
 import { Monitor, Palette, Wrench } from "lucide-react"
+import { useTranslation } from "react-i18next"
 
 const About = () => {
+  const { t } = useTranslation()
+
   return (
     <div className="bg-black pb-20">
       <div>
@@ -22,10 +25,10 @@ const About = () => {
       <div className="container text-white mt-8">
         <div className="mb-12 text-center">
           <h3 className="text-xl text-blue-500 mb-2">
-            About Me
+            {t("aboutMe")}
           </h3>
           <h4 className="text-gray-400 text-sm md:text-base">
-            Non, vous n'êtes pas prêt à faire ma connaissance 🙂
+            Quand le code rencontre la créativité, ça donne... moi ! 😉
           </h4>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-6">
@@ -38,14 +41,13 @@ const About = () => {
           </div>
           <div className="col-span-2">
             <h2 className="text-2xl font-medium text-gray-400 mb-2">
-              Bridging Design and Development
+              {t("titleAbout")}
             </h2>
             <p className="italic text-gray-400 mb-3">
-              "Good design is as little design as possible." – Dieter Rams
+              {t("quote")}
             </p>
-            <p className="mb-4 text-gray-300 border-l-2 border-gray-600 pl-2 text-justify text-sm md:text-base">
-              Back in 2020, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. 
-              Fast-forward to today, and I’ve had the privilege.
+            <p className="mb-4 text-gray-300 border-l-2 border-gray-600 pl-2 text-justify text-sm md:text-sm">
+              {t("aboutDesc")}
             </p>
             <div className="grid grid-cols-3 gap-2">
               <div className="col-span-1 bg-blue-600 w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-sm pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
@@ -56,7 +58,7 @@ const About = () => {
                   <p className="text-gray-300 text-xs md:text-sm lg:text-base">
                     Creative
                   </p>
-                  <h2 className="text-gray-100 text-xl md:text-2xl lg:text-3xl whitespace-nowrap">
+                  <h2 className="text-gray-100 text-lg md:text-xl lg:text-2xl whitespace-nowrap">
                     UI/UX Design
                   </h2>
                 </div>
@@ -69,8 +71,8 @@ const About = () => {
                   <p className="text-gray-300 text-xs md:text-sm lg:text-base">
                     Interactive
                   </p>
-                  <h2 className="text-gray-100 text-xl md:text-2xl lg:text-3xl whitespace-nowrap">
-                    Interfaces
+                  <h2 className="text-gray-100 text-lg md:text-xl lg:text-2xl whitespace-nowrap">
+                    Digital Interfaces
                   </h2>
                 </div>
               </div>
@@ -80,10 +82,10 @@ const About = () => {
                 </div>
                 <div className="">
                   <p className="text-gray-300 text-xs md:text-sm lg:text-base">
-                    Robust Backend
+                    Robust
                   </p>
-                  <h2 className="text-gray-100 text-xl md:text-2xl lg:text-3xl whitespace-nowrap">
-                    Development
+                  <h2 className="text-gray-100 text-lg md:text-xl lg:text-2xl whitespace-nowrap">
+                    Problem Solver
                   </h2>
                 </div>
               </div>

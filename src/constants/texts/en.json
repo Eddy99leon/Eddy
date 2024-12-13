@@ -17,7 +17,11 @@
   "ang": "english",
   "fran": "french",
   "malg": "malagasy",
-
-  "welcome": "Welcome back.",
-  "Languages": "Languages"
+  "aboutDesc": "Back in 2020, I had a sudden urge to go bald (yeah..). They say coding makes developers bald, so I decided to switch fields and dive into IT. What started as mere curiosity quickly turned into a true passion. Since then, I've fallen into the wonderful (and sometimes frustrating) world of development.",
+  "quote": "\"Coding makes the hair fall, but at least I have a lighter head.\" – Anonymous",
+  "titleAbout": "Harmonizing Design and Technology",
+  "aboutMe": "About Me",
+  "heroDesc": "I love designing sleek and functional interfaces that enhance user experience. The frontend is where I can bring ideas to life with precision. Every detail matters in creating a harmonious and intuitive design.",
+  "footerDesc": "Always seeking new challenges, this portfolio showcases part of my work. If you want to collaborate with me or learn more, feel free to contact me.",
+  "languages": "Languages"
 }

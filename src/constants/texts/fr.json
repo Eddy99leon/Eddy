@@ -17,7 +17,11 @@
   "ang": "anglais",
   "fran": "français",
   "malg": "malgache",
-
-  "welcome": "Bienvenue à vous.",
-  "Languages": "Languages"
+  "aboutDesc": "Retour en 2020, où j’ai eu une envie soudaine d’être chauve (et ouais..). On dit que le code rend les développeurs chauves, alors j’ai décidé de changer de filière et de plonger dans l’informatique. Ce qui n’était au départ qu’une curiosité s’est vite transformé en une véritable passion. Et depuis, je suis tombé dans le monde merveilleux (et parfois frustrant) du développement.",
+  "quote": "\"Le code fait tomber les cheveux, mais au moins j’ai une tête plus légère.\" – Anonyme",
+  "titleAbout": "Harmoniser Design et Technologie",
+  "aboutMe": "À propos de moi",
+  "heroDesc": "J'aime concevoir des interfaces élégantes et fonctionnelles qui améliorent l'expérience utilisateur. Le frontend est l'endroit où je peux donner vie aux idées avec précision. Chaque détail est important pour créer un design harmonieux et intuitif.",
+  "footerDesc": "Étant toujours en quête de nouveaux défis, ce portfolio présente une partie de mon travail. Si vous souhaitez travailler avec moi ou en savoir plus, n'hésitez pas à me contacter.",
+  "languages": "Langues"
 }

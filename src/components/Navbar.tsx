@@ -87,7 +87,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex items-center gap-6">
-            <div>
+            <div className="">
               <Language />
             </div>
             <div>

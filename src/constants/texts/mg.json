@@ -17,7 +17,11 @@
     "ang": "anglisy",
     "fran": "frantsay",
     "malg": "malagasy",
-
-    "welcome" : "Tongasoa ianareo.",
-    "Languages": "Fiteny"
+    "aboutDesc": "Ny taona 2020, dia nahatsapa tampoka aho fa te ho sola loha (inona aky no idirany..). Maro ireo milaza fa ny kaody dia mahatonga ny mpamorona tranokala ho lasa sola, ka dia nanapa-kevitra ny hanova sehatra sy hiditra amin'ny tontolon'ny informatika aho. Nanomboka tamin'ny oe liana, nefa dia lasa nivadika tiako ilay izy. Amin'izao, dia milomano tanteraka amin'ny tontolon'ny informatika aho, izay mahafinaritra nefa indraindray mahasorena.",
+    "quote": "\"Ny kaody dia mahatonga ny volo ho fongana, fa farafaharatsiny manana loha mavesatra aho.\" – Tsy fantatra",
+    "titleAbout": "Mampifanaraka ny Design sy ny Teknolojia",
+    "aboutMe": "Momba ahy",
+    "heroDesc": "Tiako ny mandrafitra interfaces mahafinaritra sy mahomby izay manatsara ny traikefan'ny mpampiasa. Ny frontend no toerana ahafahako mitondra hevitra ho amin'ny fiainana amin'ny fahitsiana. Zava-dehibe ny antsipirihany tsirairay amin'ny fanamboarana design mirindra sy intuitive.",
+    "footerDesc": "Mitady fanamby vaovao hatrany, ity portfolio ity dia mampiseho ampahany amin'ny asako. Raha te hiasa miaraka amiko ianao na te hahalala bebe kokoa, aza misalasala mifandray amiko.",
+    "languages": "Fiteny"
 }

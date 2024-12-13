@@ -43,6 +43,20 @@ export interface ProjectType {
     code_link: string;
 }
 
-interface ProjectItemProps {
+export interface ProjectItemProps {
     project: ProjectType;
 }
+
+export type ExperienceType = {
+    id: number;
+    poste: string;
+    entreprise: string;
+    date: string;
+    type: string;
+    description: string;
+    technologies: string[];
+};
+
+export type ExperienceProps = {
+    experience: ExperienceType;
+};

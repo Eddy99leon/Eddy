@@ -3,7 +3,7 @@ import ProjectItem from "./ProjectItem"
 
 const Projects = () => {
   return (
-    <div className="">
+    <div>
         <div className="container py-10">
             <div className="mb-14 text-center">
                 <h3 className="text-xl">
@@ -16,7 +16,7 @@ const Projects = () => {
             <div className="space-y-6">
                 { ProjectList.map((project) => {
                     return(
-                        <ProjectItem project={project} />
+                        <ProjectItem key={project.id} project={project} />
                     )
                 })}
             </div>

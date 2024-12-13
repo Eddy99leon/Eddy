@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,17 +10,14 @@ import {
 import { useTranslation } from "react-i18next";
 import { Languages } from "lucide-react";
 import Flag from 'react-world-flags'
+import { useLanguage } from "@/contexts/LanguageContext";
 
 
 const Language = () => {
-  const [ t, i18n ] = useTranslation()
-  const [position, setPosition] = useState<"en" | "fr" | "mg">("fr")
+  const { t } = useTranslation()
+  const { position, changeLanguage } = useLanguage();
 
-  useEffect(()=>{
-    i18n.changeLanguage(position)
-  }, [position])
-
-  const flagCodes = {
+  const flagCodes: Record<"en" | "fr" | "mg", string> = {
     en: "GB",
     fr: "FR",
     mg: "MG",
@@ -29,22 +25,22 @@ const Language = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <button className="outline-none border-none flex items-center">
+      <DropdownMenuTrigger asChild className="flex items-center">
+        <div className="cursor-pointer">
           <Languages size={24} className="mr-1" />
           <Flag 
-            code={flagCodes[position]} 
+            code={flagCodes[position as "en" | "fr" | "mg"]}
             alt={position} 
             className="w-7 h-5 border" 
           />
-        </button>
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuLabel>{t("Languages")}</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup 
           value={position} 
-          onValueChange={(value) => setPosition(value as "en" | "fr" | "mg")}
+          onValueChange={(value) => changeLanguage(value as "en" | "fr" | "mg")}
         >
           <DropdownMenuRadioItem value="en">{t("ang")}</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="fr">{t("fran")}</DropdownMenuRadioItem>

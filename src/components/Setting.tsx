@@ -14,7 +14,7 @@ import { Settings } from "lucide-react";
 import { useState } from "react";
 
 const Setting = () => {
-  const { color, setColor, setBorderRadius, setTheme } = useSetting();
+  const { setColor, setBorderRadius, setTheme } = useSetting();
   
   const [selectedRadiusId, setSelectedRadiusId] = useState<number | null>(null);
   const [selectedColorId, setSelectedColorId] = useState<number | null>(null);
@@ -26,7 +26,7 @@ const Setting = () => {
             <DialogTrigger>
                 <Settings size={24} />
             </DialogTrigger>
-            <DialogContent>
+            <DialogContent className="w-[340px] md:w-[400px] rounded">
                 <DialogHeader>
                 <DialogTitle className="mb-4">
                     Settings:
@@ -129,15 +129,6 @@ const Setting = () => {
                                     );
                                 })}
                             </div>
-                        </div>
-                        <div>
-                            <p>Couleur actuelle : {color}</p>
-                            <button onClick={() => setColor("green")} className="bg-primary text-white p-2 rounded">
-                                Activer le thème vert
-                            </button>
-                            <button onClick={() => setColor("blue")} className="bg-primary text-white p-2 rounded">
-                                Activer le thème bleu
-                            </button>
                         </div>
                     </div>
                 </DialogDescription>
