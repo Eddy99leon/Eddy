@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className="flex items-center gap-14">
             <div className="flex items-center gap-1">
               <div>
-                <ScanFace size={32} className="text-blue-800" />
+                <ScanFace size={32} className="text-accent" />
               </div>
               <p className="text-3xl font-medium tracking-wider">
                 Ed.
@@ -72,13 +72,13 @@ const Navbar = () => {
                       key={item.id} 
                       className={`text-lg relative transition-all duration-300 ${
                         isActive
-                          ? "text-blue-600"
-                          : "text-gray-500 hover:text-blue-600"
+                          ? "text-accent"
+                          : "text-gray-500 hover:text-accent"
                       }`}
                     >
                       {t(`${item.name}`)}
                       {isActive && (
-                        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-600 transition-all duration-300"></span>
+                        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-accent transition-all duration-300"></span>
                       )}
                     </Link>
                   )

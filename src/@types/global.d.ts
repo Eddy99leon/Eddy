@@ -26,7 +26,7 @@ export type ThemeType = {
 
 export type RadiusType = {
     id: number;
-    name: "sm" | "md" | "lg" | "xl";
+    name: "none" | "sm" | "md" | "lg" | "xl";
     value: string;
 };
 

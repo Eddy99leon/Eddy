@@ -11,7 +11,10 @@
         --foreground: 240 10% 3.9%;
         --primary: 222, 28%, 12%;
         --secondary: 240 4.8% 95.9%;
-        --accent: 240 4.8% 95.9%;
+        --accent: 213 100% 40%;
+        --accent-100: 213 100% 44%;
+        --accent-50: 213 100% 95%;
+        --radius: 8px;
     }
     * {
         @apply transition-colors duration-500 ease-in-out;
@@ -20,40 +23,73 @@
 .dark {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
-    --primary: 210, 20%, 98%;
-    --secondary: 240 4.8% 95.9%;
-    --accent: 240 4.8% 95.9%;
 }
+
+
 .green {
     --primary: 142.1 76.2% 36.3%;
     --secondary: 240 4.8% 95.9%;
-    --accent: 240 4.8% 95.9%;
+    --accent: 155 55% 35%;
+    --accent-100: 155 55% 40%;
+    --accent-50: 155 100% 95%;
 }
 .blue {
     --primary: 221, 72%, 43%;
     --secondary: 240 4.8% 95.9%;
-    --accent: 240 4.8% 95.9%;
+    --accent: 213 100% 40%;
+    --accent-100: 213 100% 44%;
+    --accent-50: 213 100% 95%;
 }
 .red {
     --primary: 221, 72%, 43%;
     --secondary: 240 4.8% 95.9%;
-    --accent: 240 4.8% 95.9%;
+    --accent: 0 80% 40%;
+    --accent-100: 0 80% 45%;
+    --accent-50: 0 100% 95%;
 }
 .orange {
     --primary: 221, 72%, 43%;
     --secondary: 240 4.8% 95.9%;
-    --accent: 240 4.8% 95.9%;
+    --accent: 24 85% 45%;
+    --accent-100: 24 85% 50%;
+    --accent-50: 24 100% 95%;
 }
 .yellow {
     --primary: 221, 72%, 43%;
     --secondary: 240 4.8% 95.9%;
-    --accent: 240 4.8% 95.9%;
+    --accent: 49 100% 40%;
+    --accent-100: 49 95% 45%;
+    --accent-50: 49 100% 95%;
 }
 .violet {
     --primary: 221, 72%, 43%;
     --secondary: 240 4.8% 95.9%;
-    --accent: 240 4.8% 95.9%;
+    --accent: 261 60% 55%;
+    --accent-100: 261 60% 60%;
+    --accent-50: 261 100% 95%;
 }
+
+
+.none {
+    --radius: 0px;
+}
+.sm {
+    --radius: 4px;
+}
+
+.md {
+    --radius: 8px;
+}
+
+.lg {
+    --radius: 16px;
+}
+
+.xl {
+    --radius: 24px;
+}
+
+
 
 * {
     margin: 0;

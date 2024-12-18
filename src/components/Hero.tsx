@@ -19,18 +19,18 @@ const Hero = () => {
             <h2 className="text-gray-600 text-2xl tracking-wide mb-2">
               {t("post")}
             </h2>
-            <hr className="border-t-2 bg-blue-700 mb-2 max-w-36 h-[6px] " />
+            <hr className="border-t-2 bg-accent mb-2 max-w-36 h-[6px] " />
             <p className="max-w-[450px] text-gray-500 mb-6">
               {t("heroDesc")}
             </p>
             <div className="flex items-center gap-8">
-              <button className="bg-blue-700 text-white flex items-center gap-1 py-3 px-4 rounded">
+              <button className="bg-accent text-white flex items-center gap-1 py-3 px-4 rounded-primary">
                 <ContactRound size={17} />
                 <span className="text-sm">
                   {t("contactMe")}
                 </span>
               </button>
-              <button className="bg-gray-200 text-black flex items-center gap-1 py-3 px-4 rounded border">
+              <button className="bg-gray-200 text-black flex items-center gap-1 py-3 px-4 rounded-primary border">
                 <Download size={17} />
                 <span className="text-sm">
                   {t("downCV")}
@@ -38,12 +38,18 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:block relative">
+            <div className="absolute -top-2 -right-2 w-[80px] h-[200px] border-t-4 border-r-4 border-accent rounded-se-primary">
+
+            </div>
             <img 
               src={avatar} 
-              className="w-[300px] shadow-xl rounded-lg"
+              className="w-[300px] rounded-primary"
               alt="avatar" 
             />
+            <div className="absolute -bottom-2 -left-2 w-[80px] h-[200px] border-b-4 border-l-4 border-accent rounded-es-primary">
+
+            </div>
           </div>
         </div>
       </div>

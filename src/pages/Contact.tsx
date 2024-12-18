@@ -23,16 +23,16 @@ const Contact = () => {
               </h3>
             </div>
             <div className="flex items-center gap-4">
-              <div className="bg-gray-700 hover:bg-gray-600 p-3 rounded-md">
+              <div className="bg-gray-700 hover:bg-gray-600 p-3 rounded-primary">
                 <Facebook size={22} />
               </div>
-              <div className="bg-gray-700 hover:bg-gray-600 p-3 rounded-md">
+              <div className="bg-gray-700 hover:bg-gray-600 p-3 rounded-primary">
                 <Linkedin size={22} />
               </div>
-              <div className="bg-gray-700 hover:bg-gray-600 p-3 rounded-md">
+              <div className="bg-gray-700 hover:bg-gray-600 p-3 rounded-primary">
                 <Github size={22} />
               </div>
-              <div className="bg-gray-700 hover:bg-gray-600 p-3 rounded-md">
+              <div className="bg-gray-700 hover:bg-gray-600 p-3 rounded-primary">
                 <Gitlab size={22} />
               </div>
             </div>
@@ -48,16 +48,16 @@ const Contact = () => {
               perfect product .
             </h2>
             <h3 className="hidden lg:flex items-center gap-4 text-xl">
-              <span className="text-blue-900">
+              <span className="text-accent">
                 Juste send me a message
               </span>
               <span>
-                <MoveRight size={28} className="text-blue-900" />
+                <MoveRight size={28} className="text-accent" />
               </span>
             </h3>
             <div className="space-y-6">
               <div className="flex items-center gap-3">
-                <div className="bg-blue-100 rounded p-5">
+                <div className="bg-accent-50 rounded-primary p-5">
                   <Phone size={20} />
                 </div>
                 <div>
@@ -70,7 +70,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <div className="bg-blue-100 rounded p-5">
+                <div className="bg-accent-50 rounded-primary p-5">
                   <AtSign size={20} />
                 </div>
                 <div>
@@ -85,8 +85,8 @@ const Contact = () => {
             </div>
           </div>
           <div className="col-span-3 lg:col-span-2 w-full flex justify-end relative">
-            <div className="bg-white shadow-md rounded-md lg:absolute w-full lg:w-[650px] lg:-top-72">
-              <div className="flex items-center justify-center bg-blue-50 h-24 text-center">
+            <div className="bg-white shadow-md rounded-primary overflow-hidden lg:absolute w-full lg:w-[650px] lg:-top-72">
+              <div className="flex items-center justify-center bg-accent-50 h-24 text-center">
                 <p className="text-sm md:text-base">
                   Write me a few words about your project and i'll prepare <br />
                   a proposale for you within 24 hours
@@ -99,14 +99,14 @@ const Contact = () => {
                     name="name" 
                     placeholder={t("Yname")}
                     spellCheck="false"
-                    className="flex-1 bg-gray-100 px-3 py-4 rounded-sm border-none outline-none text-sm md:text-base"
+                    className="flex-1 bg-gray-100 px-3 py-4 rounded-primary border-none outline-none text-sm md:text-base"
                   />
                   <input 
                     type="email" 
                     name="email" 
                     placeholder={t("Ymail")} 
                     spellCheck="false"
-                    className="flex-1 bg-gray-100 px-3 py-4 rounded-sm border-none outline-none text-sm md:text-base"
+                    className="flex-1 bg-gray-100 px-3 py-4 rounded-primary border-none outline-none text-sm md:text-base"
                   />
                 </div>
                 <div className="flex flex-col sm:flex-row gap-6">
@@ -115,14 +115,14 @@ const Contact = () => {
                     name="company" 
                     placeholder={t("Ycompany")} 
                     spellCheck="false"
-                    className="flex-1 bg-gray-100 px-3 py-4 rounded-sm border-none outline-none text-sm md:text-base"
+                    className="flex-1 bg-gray-100 px-3 py-4 rounded-primary border-none outline-none text-sm md:text-base"
                   />
                   <input 
                     type="text" 
                     name="phone" 
                     placeholder={t("Yphone")} 
                     spellCheck="false"
-                    className="flex-1 bg-gray-100 px-3 py-4 rounded-sm border-none outline-none text-sm md:text-base"
+                    className="flex-1 bg-gray-100 px-3 py-4 rounded-primary border-none outline-none text-sm md:text-base"
                   />
                 </div>
                 <div>
@@ -130,11 +130,11 @@ const Contact = () => {
                     name="object" 
                     id="object" 
                     placeholder={t("Ymessage")}
-                    className="w-full min-h-32 md:min-h-52 bg-gray-100 px-3 py-4 rounded-sm border-none outline-none"
+                    className="w-full min-h-32 md:min-h-52 bg-gray-100 px-3 py-4 rounded-primary border-none outline-none"
                   />
                 </div>
                 <div>
-                  <button className="bg-blue-900 text-white w-full text-sm md:text-base py-3 rounded-sm">
+                  <button className="bg-accent text-white w-full text-sm md:text-base py-3 rounded-primary">
                     {t("sendMess")}
                   </button>
                 </div>

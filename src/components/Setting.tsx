@@ -49,7 +49,7 @@ const Setting = () => {
                                             }}
                                             className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-2xl ${
                                                 isActive
-                                                    ? "border border-blue-600"
+                                                    ? "border border-accent"
                                                     : "border border-gray-300"
                                             }`}
                                         >
@@ -78,7 +78,7 @@ const Setting = () => {
                                             }}
                                             className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-2xl ${
                                                 isActive
-                                                    ? "border border-blue-600"
+                                                    ? "border border-accent"
                                                     : "border border-gray-300"
                                             }`}
                                         >
@@ -87,7 +87,7 @@ const Setting = () => {
                                                 name="radius"
                                                 checked={isActive}
                                                 onChange={() => setSelectedRadiusId(radui.id)}
-                                                className="w-4 h-4 text-blue-500 bg-white border-gray-300 rounded-full"
+                                                className="w-4 h-4 text-accent bg-white border-gray-300 rounded-full cursor-pointer"
                                             />
                                             <span className="text-sm">
                                                 {radui.name}
@@ -113,7 +113,7 @@ const Setting = () => {
                                             }}
                                             className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-2xl ${
                                                 isActive
-                                                    ? "border border-blue-600"
+                                                    ? "border border-accent"
                                                     : "border border-gray-300"
                                             }`}
                                         >
@@ -134,13 +134,13 @@ const Setting = () => {
                 </DialogDescription>
                 <div className="flex justify-between items-center pt-6">
                     <DialogClose asChild>
-                        <button className="border w-36 py-2 rounded">
+                        <button className="border w-36 py-2 rounded-primary">
                             Annuler
                         </button>
                     </DialogClose>
                     <button 
                         onClick={() => {}}
-                        className="bg-gray-100 border w-36 py-2 rounded"
+                        className="bg-gray-100 border w-36 py-2 rounded-primary"
                     >
                         Sauvegarder
                     </button>

@@ -7,7 +7,7 @@ const ExpCard = ({experience} : ExperienceProps) => {
             <h1 className="font-semibold">
                 Poste:
             </h1>
-            <h1 className="text-blue-700">
+            <h1 className="text-accent">
                 {experience.poste}
             </h1>
         </div>
@@ -44,7 +44,7 @@ const ExpCard = ({experience} : ExperienceProps) => {
         <div className="flex flex-wrap gap-3">
             {experience?.technologies.map((t) => {
                 return(
-                    <span key={t} className="px-2 py-1 text-xs bg-blue-100 rounded-full whitespace-nowrap text-blue-600">
+                    <span key={t} className="px-2 py-1 text-xs bg-accent-50 rounded-full whitespace-nowrap text-accent">
                         {t}
                     </span>
                 )

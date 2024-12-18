@@ -18,7 +18,7 @@ const Footer = () => {
             <div>
               <div className="flex items-center gap-1 mb-2 md:mb-4">
                 <div>
-                  <ScanFace size={28} />
+                  <ScanFace size={28} className="text-accent" />
                 </div>
                 <p className="text-2xl font-medium tracking-wider">
                   Ed.
@@ -41,8 +41,8 @@ const Footer = () => {
                       key={item.id} 
                       className={`transition-all duration-300 ${
                         isActive
-                          ? "text-blue-500"
-                          : "text-gray-200 hover:text-blue-500"
+                          ? "text-accent"
+                          : "text-gray-200 hover:text-accent"
                       }`}
                     >
                       {t(`${item.name}`)}

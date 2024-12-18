@@ -68,13 +68,13 @@ export const iconSkills : IconSkillType[] = [
     { id: 24, name: "Postman", link: postman, type: "tool" },
 ]
 
-export const colors : ColorType[] = [
-    { id: 1, name: "Red", value: "red", color: "#FF0000" },
-    { id: 2, name: "Blue", value: "blue", color: "#0000FF" },
-    { id: 3, name: "Orange", value: "orange", color: "#FFA500" },
-    { id: 4, name: "Yellow", value: "yellow", color: "#FFFF00" },
-    { id: 5, name: "Green", value: "green", color: "#FFFF00" },
-    { id: 6, name: "Violet", value: "violet", color: "#FFFF00" },
+export const colors: ColorType[] = [
+    { id: 1, name: "Red", value: "red", color: "#C53030" },
+    { id: 2, name: "Blue", value: "blue", color: "#2B6CB0" },
+    { id: 3, name: "Orange", value: "orange", color: "#F97316" },
+    { id: 4, name: "Green", value: "green", color: "#2F855A" },
+    { id: 5, name: "Violet", value: "violet", color: "#6B46C1" },
+    { id: 6, name: "Yellow", value: "yellow", color: "#FACC15" },
 ];
 
 export  const themes : ThemeType[] = [
@@ -83,10 +83,11 @@ export  const themes : ThemeType[] = [
 ];
 
 export const raduis : RadiusType[] = [
-    { id: 1, name: "sm", value: "4px" },
-    { id: 2, name: "md", value: "6px" },
-    { id: 3, name: "lg", value: "8px" },
-    { id: 4, name: "xl", value: "10px" },
+    { id: 1, name: "none", value: "none" },
+    { id: 2, name: "sm", value: "sm" },
+    { id: 3, name: "md", value: "md" },
+    { id: 4, name: "lg", value: "lg" },
+    { id: 5, name: "xl", value: "xl" },
 ];
 
 export const ProjectList : ProjectType[] = [

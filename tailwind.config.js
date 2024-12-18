@@ -37,6 +37,11 @@ module.exports = {
         primary: "hsl(var(--primary))",
         seconday: "hsl(var(--secondary))",
         accent: "hsl(var(--accent))",
+        "accent-100": "hsl(var(--accent-100))",
+        "accent-50": "hsl(var(--accent-50))",
+      },
+      borderRadius: {
+        primary: "var(--radius)",
       },
     },
   },

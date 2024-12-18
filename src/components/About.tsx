@@ -24,7 +24,7 @@ const About = () => {
       </div>
       <div className="container text-white mt-8">
         <div className="mb-12 text-center">
-          <h3 className="text-xl text-blue-500 mb-2">
+          <h3 className="text-xl text-accent mb-2">
             {t("aboutMe")}
           </h3>
           <h4 className="text-gray-400 text-sm md:text-base">
@@ -36,7 +36,7 @@ const About = () => {
             <img 
               src={aboutImg} 
               alt="about image"
-              className="w-[350px] rounded-lg"
+              className="w-[350px] rounded-primary"
             />
           </div>
           <div className="col-span-2">
@@ -50,8 +50,8 @@ const About = () => {
               {t("aboutDesc")}
             </p>
             <div className="grid grid-cols-3 gap-2">
-              <div className="col-span-1 bg-blue-600 w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-sm pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
-                <div className="bg-blue-500 w-fit rounded-sm p-3 mb-4">
+              <div className="col-span-1 bg-accent w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-primary pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
+                <div className="bg-accent-100 w-fit rounded-primary p-3 mb-4">
                   <Palette className="size-4 md:size-5" />
                 </div>
                 <div className="">
@@ -63,8 +63,8 @@ const About = () => {
                   </h2>
                 </div>
               </div>
-              <div className="col-span-1 bg-gray-700 w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-sm pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
-                <div className="bg-gray-600 w-fit rounded-sm p-3 mb-4">
+              <div className="col-span-1 bg-gray-700 w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-primary pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
+                <div className="bg-gray-600 w-fit rounded-primary p-3 mb-4">
                   <Monitor className="size-4 md:size-5" />
                 </div>
                 <div className="">
@@ -76,8 +76,8 @@ const About = () => {
                   </h2>
                 </div>
               </div>
-              <div className="col-span-1 bg-gray-700 w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-sm pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
-                <div className="bg-gray-600 w-fit rounded-sm p-3 mb-4">
+              <div className="col-span-1 bg-gray-700 w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-primary pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
+                <div className="bg-gray-600 w-fit rounded-primary p-3 mb-4">
                   <Wrench className="size-4 md:size-5" />
                 </div>
                 <div className="">

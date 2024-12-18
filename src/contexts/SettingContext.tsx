@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
 export type Color = "green" | "blue" | "orange" | "violet" | "yellow" | "red";
-export type BorderRadius = "sm" | "md" | "lg" | "xl";
+export type BorderRadius = "none" | "sm" | "md" | "lg" | "xl";
 export type Theme = "light" | "dark" | "system";
 
 type SettingProviderProps = {
@@ -53,7 +53,7 @@ export function SettingProvider({
     root.classList.remove("green", "blue", "orange", "violet", "yellow", "red");
     root.classList.add(color);
 
-    root.classList.remove("sm", "md", "lg", "xl");
+    root.classList.remove("none", "sm", "md", "lg", "xl");
     root.classList.add(borderRadius);
 
     root.classList.remove("light", "dark");
