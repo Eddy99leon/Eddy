@@ -3,7 +3,7 @@ import { ProjectItemProps } from "@/@types/global"
   
 const ProjectItem = ({project}: ProjectItemProps) => {
   return (
-    <div className="block md:flex w-full gap-3 bg-white rounded shadow overflow-hidden p-3">
+    <div className="block md:flex w-full gap-3 bg-white rounded-primary shadow overflow-hidden p-3">
         <div className="flex-1 rounded mb-4 md:mb-0">
             <img 
                 src={project.image} 

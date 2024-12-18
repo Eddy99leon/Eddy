@@ -26,7 +26,7 @@ const Setting = () => {
             <DialogTrigger>
                 <Settings size={24} />
             </DialogTrigger>
-            <DialogContent className="w-[340px] md:w-[400px] rounded">
+            <DialogContent className="w-[340px] md:w-[400px] rounded-primary">
                 <DialogHeader>
                 <DialogTitle className="mb-4">
                     Settings:
@@ -47,7 +47,7 @@ const Setting = () => {
                                                 setSelectedThemeId(theme.id);
                                                 setTheme(theme.value);
                                             }}
-                                            className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-2xl ${
+                                            className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-primary ${
                                                 isActive
                                                     ? "border border-accent"
                                                     : "border border-gray-300"
@@ -76,7 +76,7 @@ const Setting = () => {
                                                 setBorderRadius(radui.value as BorderRadius);
                                                 setSelectedRadiusId(radui.id)
                                             }}
-                                            className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-2xl ${
+                                            className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-primary ${
                                                 isActive
                                                     ? "border border-accent"
                                                     : "border border-gray-300"
@@ -111,7 +111,7 @@ const Setting = () => {
                                                 setColor(color.value as Color);
                                                 setSelectedColorId(color.id)
                                             }}
-                                            className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-2xl ${
+                                            className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-primary ${
                                                 isActive
                                                     ? "border border-accent"
                                                     : "border border-gray-300"

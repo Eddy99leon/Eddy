@@ -22,7 +22,7 @@ const Experience = () => {
                         )
                     })}
                 </div>
-                <div className="bg-white rounded shadow p-3">
+                <div className="bg-white rounded-primary shadow p-3">
                     <Skills />
                 </div>
             </div>

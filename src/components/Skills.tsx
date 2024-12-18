@@ -11,7 +11,7 @@ const Skills = () => {
                 return (
                     <div 
                         key={skill.id}
-                        className="col-span-1 flex flex-col items-center justify-center gap-2 border w-20 h-20 rounded hover:shadow-sm hover:scale-105"
+                        className="col-span-1 flex flex-col items-center justify-center gap-2 border w-20 h-20 rounded-primary hover:shadow-sm hover:scale-105"
                     >
                         <img 
                             src={skill.link} 
