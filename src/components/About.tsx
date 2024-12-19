@@ -1,9 +1,11 @@
 import aboutImg from "@/assets/img1.jpg"
+import { useSetting } from "@/contexts/SettingContext"
 import { Monitor, Palette, Wrench } from "lucide-react"
 import { useTranslation } from "react-i18next"
 
 const About = () => {
   const { t } = useTranslation()
+  const { theme } = useSetting()
 
   return (
     <div className="bg-black pb-20">
@@ -12,7 +14,7 @@ const About = () => {
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 1000 100" 
-            fill="#f3f4f6"
+            fill={ theme == "light" ? "#f3f4f6" : "#000000"}
           >
             <path d="M0 0v84l500 16 500-16V0H0z" opacity=".2"></path>
             <path d="M0 0v64l500 36 500-36V0H0z" opacity=".4"></path>
