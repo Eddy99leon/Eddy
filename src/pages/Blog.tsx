@@ -10,7 +10,7 @@ const Blog = () => {
         <div className="flex-1">
           <div className="mb-6 cursor-pointer">
             <Link to="/">
-              <MoveLeft className="text-blue-500 hover:text-blue-700 transition-colors duration-300" />
+              <MoveLeft className="text-accent-100 hover:text-accent transition-colors duration-300" />
             </Link>
           </div>
           <h3 className="text-gray-500">

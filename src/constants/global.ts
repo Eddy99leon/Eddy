@@ -28,17 +28,20 @@ export const navItems : NavItemType[] = [
     {
         id: 1,
         name: "home",
-        link: "/"
+        link: "/",
+        icon: "home",
     },
     {
         id: 2,
         name: "contact",
-        link: "/contact"
+        link: "/contact",
+        icon: "contact",
     },
     {
         id: 3,
         name: "blog",
-        link: "/blog"
+        link: "/blog",
+        icon: "blog",
     }
 ]
 
@@ -136,12 +139,7 @@ export const experienceLists : ExperienceType[] = [
       entreprise: "SK'HAY",
       date: "Mars 2024 - Maintenant",
       type: "CDI",
-      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
+      description: `On travaille sur un projet de site d'animation pour une plateforme de rencontre. J’ai créé des API avec Symfony, corrigé et amélioré le design en utilisant Material UI, puis rendu le site interactif avec React. On a utilisé MySQL pour la base de données et Pusher pour afficher les données en temps réel.`,
       technologies: [
         "React.Js",
         "Material Ui",
@@ -158,12 +156,7 @@ export const experienceLists : ExperienceType[] = [
       entreprise: "HAISOA",
       date: "Jul 2023 - Oct 2023",
       type: "Stage",
-      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
+      description: `On a travaillé sur la création d'un site universitaire. On a utilisé React pour le frontend et ExpressJS pour le backend. J'ai réalisé le design sur Figma, puis l'ai intégré avant de développer le backend et dynamiser le site avec React. On a utilisé MongoDB pour la base de données et Tailwind pour l'intégration du design.`,
       technologies: [
         "React.Js",
         "Tailwind",

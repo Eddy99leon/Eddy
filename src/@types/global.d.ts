@@ -9,6 +9,7 @@ export type NavItemType = {
     id: number;
     name: string;
     link: string;
+    icon: "home" | "contact" | "blog";
 };
 
 export type ColorType = {
