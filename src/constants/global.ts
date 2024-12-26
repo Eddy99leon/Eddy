@@ -37,12 +37,12 @@ export const navItems : NavItemType[] = [
         link: "/contact",
         icon: "contact",
     },
-    {
-        id: 3,
-        name: "blog",
-        link: "/blog",
-        icon: "blog",
-    }
+    // {
+    //     id: 3,
+    //     name: "blog",
+    //     link: "/blog",
+    //     icon: "blog",
+    // }
 ]
 
 export const iconSkills : IconSkillType[] = [

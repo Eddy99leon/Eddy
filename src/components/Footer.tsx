@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
           {/* second */}
           <div>
-            <div className="flex gap-6 mb-6 md:mb-10">
+            <div className="flex justify-between mb-6 md:mb-10">
               {
                 navItems.map((item) => {
                   const isActive = location.pathname === item.link;
@@ -52,16 +52,28 @@ const Footer = () => {
               }
             </div>
             <div className="flex gap-8 text-gray-400">
-              <a href="https://www.google.com">
+              <a 
+                href="https://web.facebook.com/profile.php?id=100094137014767"
+                target="_blank"
+              >
                 <Facebook size={22} />
               </a>
-              <a href="https://www.google.com">
+              <a 
+                href="https://mg.linkedin.com/in/eddy-andriamisaina-863431299"
+                target="_blank"
+              >
                 <Linkedin size={22} />
               </a>
-              <a href="https://www.google.com">
+              <a 
+                href="https://github.com/Eddy99leon"
+                target="_blank"
+              >
                 <Github size={22} />
               </a>
-              <a href="https://www.google.com">
+              <a 
+                href="https://github.com/Eddy99leon"
+                target="_blank"
+              >
                 <Gitlab size={22} />
               </a>
             </div>

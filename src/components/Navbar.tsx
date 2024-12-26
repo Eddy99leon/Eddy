@@ -14,21 +14,33 @@ const Navbar = () => {
   return (
     <div>
 
-      <div className="bg-gray-900 text-gray-200">
+      <div className="fixed w-full z-10 bg-black text-gray-200">
         <div className="container py-2 flex justify-between items-center">
           <div className="flex gap-3">
-            <div>
+            <a 
+              href="https://web.facebook.com/profile.php?id=100094137014767"
+              target="_blank"
+            >
               <Facebook size={17} />
-            </div>
-            <div>
+            </a>
+            <a 
+              href="https://mg.linkedin.com/in/eddy-andriamisaina-863431299"
+              target="_blank"
+            >
               <Linkedin size={17} />
-            </div>
-            <div>
+            </a>
+            <a 
+              href="https://github.com/Eddy99leon"
+              target="_blank"
+            >
               <Github size={17} />
-            </div>
-            <div>
+            </a>
+            <a
+              href="https://github.com/Eddy99leon"
+              target="_blank"
+            >
               <Gitlab size={17} />
-            </div>
+            </a>
           </div>
           <div className="flex gap-3 text-sm">
             <div className="space-x-1">
@@ -51,7 +63,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="bg-gray-50 py-5 border-b shadow">
+      <div className="bg-background py-5 border-b shadow pt-14">
         <div className="container flex justify-between items-center">
           <div className="flex items-center gap-14">
             <div className="flex items-center gap-1">

@@ -1,4 +1,5 @@
 import avatar from "@/assets/img1.jpg"
+import whatsapp from "@/assets/icon/whatsapp.svg"
 import { ContactRound, Download } from "lucide-react"
 import { useTranslation } from "react-i18next"
 
@@ -24,12 +25,21 @@ const Hero = () => {
               {t("heroDesc")}
             </p>
             <div className="flex items-center gap-8">
-              <button className="bg-accent text-white flex items-center gap-1 py-3 px-4 rounded-primary">
-                <ContactRound size={17} />
-                <span className="text-sm">
-                  {t("contactMe")}
-                </span>
-              </button>
+              <a 
+                href="https://wa.me/261345011705"
+                target="_blank"
+              >
+                <button className="bg-accent text-white flex items-center gap-1 py-3 px-4 rounded-primary">
+                  <img 
+                      src={whatsapp} 
+                      alt="whatsapp icon"
+                      className="w-4 h-4"
+                  />
+                  <span className="text-sm">
+                    {t("contactMe")}
+                  </span>
+                </button>
+              </a>
               <button className="bg-gray-200 text-black flex items-center gap-1 py-3 px-4 rounded-primary border">
                 <Download size={17} />
                 <span className="text-sm">
