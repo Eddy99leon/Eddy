@@ -23,5 +23,12 @@
     "aboutMe": "Momba ahy",
     "heroDesc": "Tiako ny mandrafitra interfaces mahafinaritra sy mahomby izay manatsara ny traikefan'ny mpampiasa. Ny frontend no toerana ahafahako mitondra hevitra ho amin'ny fiainana amin'ny fahitsiana. Zava-dehibe ny antsipirihany tsirairay amin'ny fanamboarana design mirindra sy intuitive.",
     "footerDesc": "Mitady fanamby vaovao hatrany, ity portfolio ity dia mampiseho ampahany amin'ny asako. Raha te hiasa miaraka amiko ianao na te hahalala bebe kokoa, aza misalasala mifandray amiko.",
-    "languages": "Fiteny"
+    "languages": "Fiteny",
+    "load": "Miandry...",
+    "congrat": "Arahabaina ",
+    "succesTextC": "Efa voaray soa aman-tsara ny hafatrao. Hamaly anao tsy ho ela aho.",
+    "errorTextC": "Nisy hadisoana nitranga, havereno alefa afaka fotoana fohy.",
+    "oops": "Indrisy!",
+    "cool": "Milay zany",
+    "agree": "Eny ary"
 }

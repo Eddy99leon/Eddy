@@ -23,5 +23,12 @@
   "aboutMe": "À propos de moi",
   "heroDesc": "J'aime concevoir des interfaces élégantes et fonctionnelles qui améliorent l'expérience utilisateur. Le frontend est l'endroit où je peux donner vie aux idées avec précision. Chaque détail est important pour créer un design harmonieux et intuitif.",
   "footerDesc": "Étant toujours en quête de nouveaux défis, ce portfolio présente une partie de mon travail. Si vous souhaitez travailler avec moi ou en savoir plus, n'hésitez pas à me contacter.",
-  "languages": "Langues"
+  "languages": "Langues",
+  "load": "chargement...",
+  "congrat": "Félicitation ",
+  "succesTextC": "Votre message a bien été reçu. Je vous réponds très bientôt.",
+  "errorTextC": "Une erreur s'est produite, je vous prie de réessayer plus tard.",
+  "oops": "Oups!",
+  "cool": "Cool",
+  "agree": "D'accord"
 }

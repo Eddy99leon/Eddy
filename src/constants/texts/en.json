@@ -23,5 +23,12 @@
   "aboutMe": "About Me",
   "heroDesc": "I love designing sleek and functional interfaces that enhance user experience. The frontend is where I can bring ideas to life with precision. Every detail matters in creating a harmonious and intuitive design.",
   "footerDesc": "Always seeking new challenges, this portfolio showcases part of my work. If you want to collaborate with me or learn more, feel free to contact me.",
-  "languages": "Languages"
+  "languages": "Languages",
+  "load": "loading...",
+  "congrat": "Congratulations ",
+  "succesTextC": "Your message has been successfully received. I will reply to you very soon.",
+  "errorTextC": "An error occurred, please try again later.",
+  "oops": "Oops!",
+  "cool": "Cool",
+  "agree": "Alright"
 }

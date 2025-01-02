@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
           {/* second */}
           <div>
-            <div className="flex justify-between mb-6 md:mb-10">
+            <div className="flex justify-between gap-4 mb-6 md:mb-10">
               {
                 navItems.map((item) => {
                   const isActive = location.pathname === item.link;

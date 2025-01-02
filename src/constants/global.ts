@@ -21,8 +21,17 @@ import xampp from "../assets/icon/xampp.svg"
 import postman from "../assets/icon/postman.svg"
 import bootstrap from "../assets/icon/bootstrap.svg"
 import typescript from "../assets/icon/typescript.svg"
-import project1 from "../assets/project1.jpg"
+
+import ohabolana from "../assets/ohabolana.jpeg"
+import madagascar from "../assets/mada.jpg"
+import onifra from "../assets/onifra.jpg"
+import portfolio from "../assets/portfolio.jpg"
+import fondroy from "../assets/fondroy.png"
+
 import { ColorType, ExperienceType, IconSkillType, NavItemType, ProjectType, RadiusType, ThemeType } from "../@types/global"
+
+
+
 
 export const navItems : NavItemType[] = [
     {
@@ -99,7 +108,7 @@ export const ProjectList : ProjectType[] = [
         name: "Ohabolana Malagasy",
         resume: "Platform de gestion de tourisme",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
-        image: project1,
+        image: ohabolana,
         delay: "6",
         type: "personnel",
         level: "moyen",
@@ -111,7 +120,7 @@ export const ProjectList : ProjectType[] = [
         name: "Madagascar",
         resume: "Platform de gestion de tourisme",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
-        image: project1,
+        image: madagascar,
         delay: "4",
         type: "personnel",
         level: "facile",
@@ -123,12 +132,36 @@ export const ProjectList : ProjectType[] = [
         name: "Fondroy",
         resume: "Platform de gestion de tourisme",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
-        image: project1,
+        image: fondroy,
         delay: "5",
         type: "personnel",
         level: "difficile",
         demo_link: "https://fondroy.vercel.app/",
         code_link: ""
+    },
+    { 
+        id: 4, 
+        name: "Oniversity Ravelojaona",
+        resume: "Platform Universitaire",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
+        image: onifra,
+        delay: "3",
+        type: "professionnel",
+        level: "difficile",
+        demo_link: "",
+        code_link: ""
+    },
+    { 
+        id: 5, 
+        name: "Eddy Portfolio ( v1 )",
+        resume: "Portfolio",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
+        image: portfolio,
+        delay: "2",
+        type: "personnel",
+        level: "difficile",
+        demo_link: "https://eddy99leon.github.io/EddyPortfolio/",
+        code_link: "https://github.com/Eddy99leon/EddyPortfolio"
     }
 ]
 

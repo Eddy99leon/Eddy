@@ -1,9 +1,56 @@
-import { AtSign, Facebook, Github, Gitlab, Linkedin, MoveRight, Phone } from "lucide-react"
+import { AtSign, Facebook, Github, Gitlab, Linkedin, LoaderCircle, MoveRight, Phone } from "lucide-react"
 import contactBg from "@/assets/bg5.svg"
 import { useTranslation } from "react-i18next"
+import Swal from 'sweetalert2'
+import { useState } from "react"
 
 const Contact = () => {
   const { t } = useTranslation()
+  const [ loading, setLoading ] = useState<boolean>(false)
+
+  const onSubmit = async (event:any) => {
+    setLoading(true)
+    event.preventDefault();
+    const form = event.target;
+
+    const formData = new FormData(form);
+    const accessKey = import.meta.env.VITE_CONTACT_KEY;
+
+    formData.append("access_key", accessKey);
+    const object = Object.fromEntries(formData);
+    const data = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: data
+    }).then((res) => res.json());
+
+    if (res.success) {
+      setLoading(false)
+      const name = res.data.name
+      Swal.fire({
+        title: t("congrat") + name + " !",
+        text: t("succesTextC"),
+        icon: "success",
+        confirmButtonColor: "hsl(var(--accent))",
+        confirmButtonText: t("cool")
+      })
+      form.reset();
+    }else{
+      setLoading(false)
+      Swal.fire({
+        title: t("oops"),
+        text: t("errorTextC"),
+        icon: 'error',
+        confirmButtonColor: "hsl(var(--accent))",
+        confirmButtonText: t("agree")
+      })
+    }
+  };
 
   return (
     <div>
@@ -92,7 +139,7 @@ const Contact = () => {
                   a proposale for you within 24 hours
                 </p>
               </div>
-              <form className="px-2 md:px-6 py-6 md:py-12 space-y-8 md:space-y-12">
+              <form onSubmit={onSubmit} className="px-2 md:px-6 py-6 md:py-12 space-y-8 md:space-y-12">
                 <div className="flex flex-col sm:flex-row gap-6">
                   <input 
                     type="text" 
@@ -100,6 +147,7 @@ const Contact = () => {
                     placeholder={t("Yname")}
                     spellCheck="false"
                     className="flex-1 bg-gray-100 px-3 py-4 rounded-primary border-none outline-none text-sm md:text-base"
+                    required
                   />
                   <input 
                     type="email" 
@@ -107,6 +155,7 @@ const Contact = () => {
                     placeholder={t("Ymail")} 
                     spellCheck="false"
                     className="flex-1 bg-gray-100 px-3 py-4 rounded-primary border-none outline-none text-sm md:text-base"
+                    required
                   />
                 </div>
                 <div className="flex flex-col sm:flex-row gap-6">
@@ -123,19 +172,32 @@ const Contact = () => {
                     placeholder={t("Yphone")} 
                     spellCheck="false"
                     className="flex-1 bg-gray-100 px-3 py-4 rounded-primary border-none outline-none text-sm md:text-base"
+                    required
                   />
                 </div>
                 <div>
                   <textarea 
-                    name="object" 
+                    name="message" 
                     id="object" 
                     placeholder={t("Ymessage")}
                     className="w-full min-h-32 md:min-h-52 bg-gray-100 px-3 py-4 rounded-primary border-none outline-none"
+                    required
                   />
                 </div>
                 <div>
-                  <button className="bg-accent text-white w-full text-sm md:text-base py-3 rounded-primary">
-                    {t("sendMess")}
+                  <button className="bg-accent text-white w-full text-sm md:text-base py-3 rounded-primary flex items-center justify-center">
+                    {loading ?
+                      <div className="flex items-center space-x-2" >
+                        <LoaderCircle className="animate-spin" />
+                        <p>
+                          {t("load")}
+                        </p>
+                      </div> 
+                      : 
+                      <p>
+                        {t("sendMess")}
+                      </p>
+                    }
                   </button>
                 </div>
               </form>

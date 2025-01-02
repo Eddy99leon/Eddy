@@ -1,7 +1,8 @@
-import avatar from "@/assets/img1.jpg"
+import hero from "@/assets/img2.jpeg"
 import whatsapp from "@/assets/icon/whatsapp.svg"
-import { ContactRound, Download } from "lucide-react"
+import { Download } from "lucide-react"
 import { useTranslation } from "react-i18next"
+import eddyCV from "../assets/Eddy_CV.pdf"
 
 const Hero = () => {
   const { t } = useTranslation()
@@ -40,12 +41,14 @@ const Hero = () => {
                   </span>
                 </button>
               </a>
-              <button className="bg-gray-200 text-black flex items-center gap-1 py-3 px-4 rounded-primary border">
-                <Download size={17} />
-                <span className="text-sm">
-                  {t("downCV")}
-                </span>
-              </button>
+              <a href={eddyCV} download>
+                <button className="bg-gray-200 text-black flex items-center gap-1 py-3 px-4 rounded-primary border">
+                  <Download size={17} />
+                  <span className="text-sm">
+                    {t("downCV")}
+                  </span>
+                </button>
+              </a>
             </div>
           </div>
           <div className="hidden md:block relative">
@@ -53,7 +56,7 @@ const Hero = () => {
 
             </div>
             <img 
-              src={avatar} 
+              src={hero} 
               className="w-[300px] rounded-primary"
               alt="avatar" 
             />
