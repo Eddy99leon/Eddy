@@ -21,33 +21,33 @@ const Navbar = () => {
               href="https://web.facebook.com/profile.php?id=100094137014767"
               target="_blank"
             >
-              <Facebook size={17} />
+              <Facebook className="size-4" />
             </a>
             <a 
               href="https://mg.linkedin.com/in/eddy-andriamisaina-863431299"
               target="_blank"
             >
-              <Linkedin size={17} />
+              <Linkedin className="size-4" />
             </a>
             <a 
               href="https://github.com/Eddy99leon"
               target="_blank"
             >
-              <Github size={17} />
+              <Github className="size-4" />
             </a>
             <a
               href="https://github.com/Eddy99leon"
               target="_blank"
             >
-              <Gitlab size={17} />
+              <Gitlab className="size-4" />
             </a>
           </div>
-          <div className="flex gap-3 text-sm">
+          <div className="flex gap-3 text-xs sm:text-sm">
             <div className="space-x-1">
               <span className="">
                 {t("email")}:
               </span>
-              <span className="font-meduim">
+              <span className="font-meduim text-gray-300">
                 leoneddy504@gmail.com
               </span>
             </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
               <span className="">
                 {t("phone")}:
               </span>
-              <span className="font-meduim">
+              <span className="font-meduim text-gray-300">
                 +261 34 50 117 05
               </span>
             </div>
@@ -63,14 +63,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="bg-background py-5 border-b shadow pt-14">
+      <div className="bg-background py-3 sm:py-4 lg:py-5 border-b shadow pt-11 sm:pt-12 lg:pt-14">
         <div className="container flex justify-between items-center">
           <div className="flex items-center gap-14">
             <div className="flex items-center gap-1">
               <div>
-                <ScanFace size={32} className="text-accent" />
+                <ScanFace className="size-6 sm:size-7 lg:size-8 text-accent" />
               </div>
-              <p className="text-3xl font-medium tracking-wider">
+              <p className="text-xl sm:text-2xl lg:text-3xl font-medium tracking-wider">
                 Ed.
               </p>
             </div>
@@ -82,7 +82,7 @@ const Navbar = () => {
                     <Link 
                       to={item.link} 
                       key={item.id} 
-                      className={`text-lg relative transition-all duration-300 ${
+                      className={`text-base lg:text-lg relative transition-all duration-300 ${
                         isActive
                           ? "text-accent"
                           : "text-gray-500 hover:text-accent"
@@ -98,8 +98,8 @@ const Navbar = () => {
               }
             </div>
           </div>
-          <div className="flex items-center gap-6">
-            <div className="">
+          <div className="flex items-center gap-3 sm:gap-5 lg:gap-6">
+            <div>
               <Language />
             </div>
             <div>

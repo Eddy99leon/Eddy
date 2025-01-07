@@ -14,24 +14,24 @@ const Footer = () => {
       <div className="bg_svg2">
         <div className="container md:flex justify-between gap-4 text-white py-14">
           {/* first */}
-          <div className="mb-8 md:mb-0">
+          <div className="mb-6 sm:mb-8 md:mb-0">
             <div>
               <div className="flex items-center gap-1 mb-2 md:mb-4">
                 <div>
-                  <ScanFace size={28} className="text-accent" />
+                  <ScanFace className="text-accent size-5 sm:size-6" />
                 </div>
-                <p className="text-2xl font-medium tracking-wider">
+                <p className=" text-xl sm:text-2xl font-medium tracking-wider">
                   Ed.
                 </p>
               </div>
-              <p className="max-w-[400px] text-gray-400">
+              <p className="max-w-[400px] text-gray-400 text-sm sm:text-base">
                 {t("footerDesc")}
               </p>
             </div>
           </div>
           {/* second */}
           <div>
-            <div className="flex justify-between gap-4 mb-6 md:mb-10">
+            <div className=" max-w-[300px] flex justify-between gap-4 mb-6 md:mb-10 text-sm sm:text-base">
               {
                 navItems.map((item) => {
                   const isActive = location.pathname === item.link;
@@ -56,25 +56,25 @@ const Footer = () => {
                 href="https://web.facebook.com/profile.php?id=100094137014767"
                 target="_blank"
               >
-                <Facebook size={22} />
+                <Facebook className="size-5 sm:size-6" />
               </a>
               <a 
                 href="https://mg.linkedin.com/in/eddy-andriamisaina-863431299"
                 target="_blank"
               >
-                <Linkedin size={22} />
+                <Linkedin className="size-5 sm:size-6" />
               </a>
               <a 
                 href="https://github.com/Eddy99leon"
                 target="_blank"
               >
-                <Github size={22} />
+                <Github className="size-5 sm:size-6" />
               </a>
               <a 
                 href="https://github.com/Eddy99leon"
                 target="_blank"
               >
-                <Gitlab size={22} />
+                <Gitlab className="size-5 sm:size-6" />
               </a>
             </div>
           </div>
@@ -83,7 +83,7 @@ const Footer = () => {
 
       <div className="bg-black border-t border-gray-700">
         <div className="container flex justify-between items-center text-white py-4">
-          <p className="text-sm sm:text-base">
+          <p className="text-xs sm:text-base">
             Copyright. Tous droits sont reservés.
           </p>
           <div>

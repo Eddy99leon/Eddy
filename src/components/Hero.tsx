@@ -12,17 +12,17 @@ const Hero = () => {
       <div className="container py-20">
         <div className="flex items-center justify-around">
           <div>
-            <h3 className="text-gray-600 tracking-wide">
+            <h3 className="text-gray-600 tracking-wide text-sm sm:text-base">
               {t("hi")}
             </h3>
-            <h1 className="text-6xl font-semibold mb-2 tracking-wide">
+            <h1 className="text-5xl md:text-6xl font-semibold mb-2 tracking-wide">
               Eddy Léon
             </h1>
-            <h2 className="text-gray-600 text-2xl tracking-wide mb-2">
+            <h2 className="text-gray-600 text-lg sm:text-xl md:text-2xl tracking-wide mb-1 md:mb-2">
               {t("post")}
             </h2>
-            <hr className="border-t-2 bg-accent mb-2 max-w-36 h-[6px] " />
-            <p className="max-w-[450px] text-gray-500 mb-6">
+            <hr className="border-t-2 bg-accent mb-2 max-w-36 h-[6px]" />
+            <p className="max-w-[450px] text-gray-500 text-xs sm:text-sm md:text-base mb-4 md:mb-6">
               {t("heroDesc")}
             </p>
             <div className="flex items-center gap-8">
@@ -34,17 +34,17 @@ const Hero = () => {
                   <img 
                       src={whatsapp} 
                       alt="whatsapp icon"
-                      className="w-4 h-4"
+                      className="size-3 sm:size-4"
                   />
-                  <span className="text-sm">
+                  <span className="text-xs sm:text-sm">
                     {t("contactMe")}
                   </span>
                 </button>
               </a>
               <a href={eddyCV} download>
                 <button className="bg-gray-200 text-black flex items-center gap-1 py-3 px-4 rounded-primary border">
-                  <Download size={17} />
-                  <span className="text-sm">
+                  <Download className="size-3 sm:size-4" />
+                  <span className="text-xs sm:text-sm">
                     {t("downCV")}
                   </span>
                 </button>

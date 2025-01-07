@@ -90,7 +90,7 @@ const Contact = () => {
       <div className="bg-gray-50">
         <div className="container grid grid-cols-3 gap-4 pt-12 lg:pt-28 pb-14 sm:pb-20 lg:pb-48">
           <div className="col-span-3 sm:flex justify-between mb-6 lg:mb-0 lg:block lg:col-span-1 lg:space-y-6">
-            <h2 className="max-w-[350px] text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-0">
+            <h2 className="max-w-[350px] text-xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-0">
               You are one step closer to build your
               perfect product .
             </h2>
@@ -134,7 +134,7 @@ const Contact = () => {
           <div className="col-span-3 lg:col-span-2 w-full flex justify-end relative">
             <div className="bg-white shadow-md rounded-primary overflow-hidden lg:absolute w-full lg:w-[650px] lg:-top-72">
               <div className="flex items-center justify-center bg-accent-50 h-24 text-center">
-                <p className="text-sm md:text-base">
+                <p className="text-xs sm:text-sm md:text-base">
                   Write me a few words about your project and i'll prepare <br />
                   a proposale for you within 24 hours
                 </p>

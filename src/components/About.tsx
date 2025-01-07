@@ -9,6 +9,8 @@ const About = () => {
 
   return (
     <div className="bg-black pb-20">
+
+
       <div>
         <div>
           <svg 
@@ -24,35 +26,39 @@ const About = () => {
           </svg>
         </div>
       </div>
+
+
       <div className="container text-white mt-8">
-        <div className="mb-12 text-center">
-          <h3 className="text-xl text-accent mb-2">
+
+        <div className="mb-4 sm:mb-8 md:mb-12 text-center">
+          <h3 className="text-base sm:text-lg md:text-xl text-accent mb-2">
             {t("aboutMe")}
           </h3>
-          <h4 className="text-gray-400 text-sm md:text-base">
-            Quand le code rencontre la créativité, ça donne... moi ! 😉
+          <h4 className="text-gray-400 text-xs sm:text-sm md:text-base">
+            Quand le code rencontre la créativité.. 😉
           </h4>
         </div>
+
         <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-6">
-          <div className="col-span-1 hidden md:flex justify-start">
+          <div className=" col-span-2 md:col-span-1 flex md:justify-start">
             <img 
               src={aboutImg} 
               alt="about image"
-              className="w-[350px] rounded-primary"
+              className="w-full md:w-[350px] rounded-primary"
             />
           </div>
-          <div className="col-span-2">
-            <h2 className="text-2xl font-medium text-gray-400 mb-2">
+          <div className="order-first md:order-last col-span-2">
+            <h2 className="text-base sm:text-lg md:text-2xl font-medium text-gray-100 mb-1 md:mb-2">
               {t("titleAbout")}
             </h2>
-            <p className="italic text-gray-400 mb-3">
+            <p className="italic text-gray-400 mb-3 text-sm sm:text-base">
               {t("quote")}
             </p>
-            <p className="mb-4 text-gray-300 border-l-2 border-gray-600 pl-2 text-justify text-sm md:text-sm">
+            <p className="mb-4 text-gray-300 border-l-2 border-gray-600 pl-2 text-justify text-xs sm:text-sm md:text-sm">
               {t("aboutDesc")}
             </p>
-            <div className="grid grid-cols-3 gap-2">
-              <div className="col-span-1 bg-accent w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-primary pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
+            <div className="grid grid-cols-3 gap-1 sm:gap-2">
+              <div className="col-span-1 bg-accent w-full h-full py-4 rounded-primary p-1 sm:p-2 md:p-3 lg:p-4">
                 <div className="bg-accent-100 w-fit rounded-primary p-3 mb-4">
                   <Palette className="size-4 md:size-5" />
                 </div>
@@ -60,12 +66,12 @@ const About = () => {
                   <p className="text-gray-300 text-xs md:text-sm lg:text-base">
                     Creative
                   </p>
-                  <h2 className="text-gray-100 text-lg md:text-xl lg:text-2xl whitespace-nowrap">
+                  <h2 className="text-gray-100 text-xs sm:text-lg md:text-xl lg:text-2xl whitespace-nowrap font-medium">
                     UI/UX Design
                   </h2>
                 </div>
               </div>
-              <div className="col-span-1 bg-gray-700 w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-primary pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
+              <div className="col-span-1 bg-gray-700 w-full h-full py-4 rounded-primary p-1 sm:p-2 md:p-3 lg:p-4">
                 <div className="bg-gray-600 w-fit rounded-primary p-3 mb-4">
                   <Monitor className="size-4 md:size-5" />
                 </div>
@@ -73,12 +79,12 @@ const About = () => {
                   <p className="text-gray-300 text-xs md:text-sm lg:text-base">
                     Interactive
                   </p>
-                  <h2 className="text-gray-100 text-lg md:text-xl lg:text-2xl whitespace-nowrap">
+                  <h2 className="text-gray-100 text-xs sm:text-lg md:text-xl lg:text-2xl whitespace-nowrap font-medium">
                     Digital Interfaces
                   </h2>
                 </div>
               </div>
-              <div className="col-span-1 bg-gray-700 w-full h-[150px] md:h-[180px] lg:h-[200px] rounded-primary pt-6 md:pt-8 lg:pt-10 p-2 md:p-3 lg:p-4">
+              <div className="col-span-1 bg-gray-700 w-full h-full py-4 rounded-primary p-1 sm:p-2 md:p-3 lg:p-4">
                 <div className="bg-gray-600 w-fit rounded-primary p-3 mb-4">
                   <Wrench className="size-4 md:size-5" />
                 </div>
@@ -86,7 +92,7 @@ const About = () => {
                   <p className="text-gray-300 text-xs md:text-sm lg:text-base">
                     Robust
                   </p>
-                  <h2 className="text-gray-100 text-lg md:text-xl lg:text-2xl whitespace-nowrap">
+                  <h2 className="text-gray-100 text-xs sm:text-lg md:text-xl lg:text-2xl whitespace-nowrap font-medium">
                     Problem Solver
                   </h2>
                 </div>
@@ -94,7 +100,10 @@ const About = () => {
             </div>
           </div>
         </div>
+
       </div>
+
+
     </div>
   )
 }

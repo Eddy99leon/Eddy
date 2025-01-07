@@ -22,7 +22,7 @@ const Sidebar = () => {
     <div>
         <Sheet>
             <SheetTrigger>
-                <Grip size={24} />
+                <Grip className="size-5 sm:size-6 lg:size-7" />
             </SheetTrigger>
             <SheetContent side="left" className="flex flex-col justify-between pt-16">
                 <div>
@@ -30,14 +30,14 @@ const Sidebar = () => {
                         <SheetTitle>
                             <div className="flex items-center gap-1">
                                 <div>
-                                    <ScanFace size={26} className="text-accent" />
+                                    <ScanFace className="size-6 sm:size-7 lg:size-8 text-accent" />
                                 </div>
-                                <p className="text-3xl font-medium text-gray-700 tracking-wider">
+                                <p className="text-xl sm:text-2xl lg:text-3xl font-medium tracking-wider">
                                     Ed.
                                 </p>
                             </div>
                         </SheetTitle>
-                        <SheetDescription className="text-2xl">
+                        <SheetDescription className="text-base sm:text-xl md:text-2xl">
                             Navigation rapide.
                         </SheetDescription>
                     </SheetHeader>
@@ -57,7 +57,7 @@ const Sidebar = () => {
                                             <span className={`${ isActive ? "text-accent" : "text-gray-500"}`}>
                                                 {getIcon(item.icon)}
                                             </span>
-                                            <p className={`${ isActive ? "text-gray-800" : "text-gray-500"}`}>
+                                            <p className={`text-sm sm:text-base ${ isActive ? "text-gray-800" : "text-gray-500"}`}>
                                                 {t(`${item.name}`)}
                                             </p>
                                         </Link>
