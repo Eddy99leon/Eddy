@@ -40,11 +40,11 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-6">
-          <div className=" col-span-2 md:col-span-1 flex md:justify-start">
+          <div className="col-span-2 md:col-span-1 flex md:justify-start">
             <img 
               src={aboutImg} 
               alt="about image"
-              className="w-full md:w-[350px] rounded-primary"
+              className="w-full md:w-[350px] h-auto rounded-primary"
             />
           </div>
           <div className="order-first md:order-last col-span-2">
