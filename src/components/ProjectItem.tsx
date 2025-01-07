@@ -50,24 +50,28 @@ const ProjectItem = ({project}: ProjectItemProps) => {
                 </div>
             </div>
             <div className="flex justify-between items-center">
-                <button className="group flex items-center gap-1 px-3 py-2 border hover:bg-accent-50 rounded-primary">
-                    <Play className="text-accent transition-transform duration-500 group-hover:scale-125 size-4 sm:size-5" /> 
-                    <span className="text-gray-600 text-sm sm:text-base">
-                        Demo
-                    </span>
-                </button>
+                <a href={project.demo_link} target="_blank">
+                    <button className="group flex items-center gap-1 px-3 py-2 border hover:bg-accent-50 rounded-primary">
+                        <Play className="text-accent transition-transform duration-500 group-hover:scale-125 size-4 sm:size-5" /> 
+                        <span className="text-gray-600 text-sm sm:text-base">
+                            Demo
+                        </span>
+                    </button>
+                </a>
                 <button className="group flex items-center gap-1 px-3 py-2 border hover:bg-accent-50 rounded-primary">
                     <Info className="text-accent transition-transform duration-500 group-hover:scale-125 size-4 sm:size-5" />
                     <span className="text-gray-600 text-sm sm:text-base">
                         Detail
                     </span>
                 </button>
-                <button className="group flex items-center gap-1 px-3 py-2 border hover:bg-accent-50 rounded-primary">
-                    <Code className="text-accent transition-transform duration-500 group-hover:scale-125 size-4 sm:size-5" />
-                    <span className="text-gray-600 text-sm sm:text-base">
-                        Code
-                    </span>
-                </button>
+                <a href={project.code_link} target="_blank">
+                    <button className="group flex items-center gap-1 px-3 py-2 border hover:bg-accent-50 rounded-primary">
+                        <Code className="text-accent transition-transform duration-500 group-hover:scale-125 size-4 sm:size-5" />
+                        <span className="text-gray-600 text-sm sm:text-base">
+                            Code
+                        </span>
+                    </button>
+                </a>
             </div>
         </div>
     </div>
