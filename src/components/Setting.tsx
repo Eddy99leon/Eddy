@@ -26,7 +26,7 @@ const Setting = () => {
             <DialogTrigger>
                 <Settings className="size-5 sm:size-6 lg:size-7" />
             </DialogTrigger>
-            <DialogContent className="max-w-[340px] md:w-[400px] rounded-primary">
+            <DialogContent className="w-[320px] sm:w-[340px] md:w-[400px] rounded-primary">
                 <DialogHeader>
                     <DialogTitle className="mb-2 sm:mb-4 text-base">
                         Settings:
