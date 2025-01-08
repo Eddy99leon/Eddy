@@ -37,11 +37,9 @@ export interface ProjectType {
     resume: string;
     description: string;
     image: string;
-    delay: string;
-    type: "personnel" | "professionnel";
-    level: "facile" | "moyen" | "difficile";
-    demo_link: string;
-    code_link: string;
+    technologies: string[];
+    demo_link: string | null;
+    code_link: string | null;
 }
 
 export interface ProjectItemProps {
@@ -60,4 +58,12 @@ export type ExperienceType = {
 
 export type ExperienceProps = {
     experience: ExperienceType;
+};
+
+export type CapabilityType = {
+    id: number;
+    isAccent: boolean;
+    icon: string;
+    label: string;
+    title: string;
 };

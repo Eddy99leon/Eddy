@@ -1,45 +1,45 @@
 import { ExperienceProps } from "@/@types/global"
+import { useTranslation } from "react-i18next"
 
 const ExpCard = ({experience} : ExperienceProps) => {
+  const { t } = useTranslation()
+
   return (
     <div className="rounded py-3 pr-3">
         <div className="flex gap-1 text-sm sm:text-base">
             <h1 className="font-semibold">
-                Poste:
+                {t("poste")}:
             </h1>
             <h1 className="text-accent">
-                {experience.poste}
+                {t(experience.poste)}
             </h1>
         </div>
         <div className="flex gap-1 text-sm sm:text-base">
             <h1 className="font-semibold">
-                Entreprise:
+                {t("entreprise")}:
             </h1>
             <h1>
                 {experience.entreprise}
-                <span>
-
-                </span>
             </h1>
         </div>
         <div className="flex gap-1 text-sm sm:text-base">
             <h1 className="font-semibold">
-                Date:
+                {t("date")}:
             </h1>
             <h1>
-                {experience.date}
+                {t(experience.date)}
             </h1>
         </div>
         <div className="flex gap-1 text-sm sm:text-base">
             <h1 className="font-semibold">
-                Type:
+                {t("type")}:
             </h1>
             <h1>
-                {experience.type}
+                {t(experience.type)}
             </h1>
         </div>
         <p className="text-xs sm:text-sm text-gray-500 text-justify mb-2">
-            {experience.description}
+            {t(experience.description)}
         </p>
         <div className="flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm md:text-base">
             {experience?.technologies.map((t) => {

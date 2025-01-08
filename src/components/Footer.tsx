@@ -84,7 +84,7 @@ const Footer = () => {
       <div className="bg-black border-t border-gray-700">
         <div className="container flex justify-between items-center text-white py-4">
           <p className="text-xs sm:text-base">
-            Copyright. Tous droits sont reservés.
+            {t("copyright")}
           </p>
           <div>
             <Language />

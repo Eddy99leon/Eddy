@@ -1,17 +1,20 @@
 import { experienceLists } from "@/constants/global"
 import ExpCard from "./ExpCard"
 import Skills from "./Skills"
+import { useTranslation } from "react-i18next"
 
 const Experience = () => {
+  const { t } = useTranslation()
+
   return (
     <div>
         <div className="container py-10">
             <div className=" mb-4 md:mb-14 text-center">
                 <h3 className="text-base sm:text-lg md:text-xl text-accent mb-1 sm:mb-2">
-                    Experience et Compétence
+                    {t("experience_section_title")}
                 </h3>
                 <h4 className="text-gray-600 text-xs sm:text-sm md:text-base">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing.
+                    {t("experience_h4_title")}
                 </h4>
             </div>
             <div className="block md:flex md:gap-2">

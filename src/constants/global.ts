@@ -28,7 +28,7 @@ import onifra from "../assets/onifra.jpg"
 import portfolio from "../assets/portfolio.jpg"
 import fondroy from "../assets/fondroy.png"
 
-import { ColorType, ExperienceType, IconSkillType, NavItemType, ProjectType, RadiusType, ThemeType } from "../@types/global"
+import { CapabilityType, ColorType, ExperienceType, IconSkillType, NavItemType, ProjectType, RadiusType, ThemeType } from "../@types/global"
 
 
 
@@ -106,60 +106,87 @@ export const ProjectList : ProjectType[] = [
     { 
         id: 1, 
         name: "Ohabolana Malagasy",
-        resume: "Platform de gestion de tourisme",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
+        resume: "ohabolana_malagasy_resume",
+        description: "ohabolana_malagasy_desc",
         image: ohabolana,
-        delay: "6",
-        type: "personnel",
-        level: "moyen",
+        technologies: [
+            "Next.Js",
+            "Tailwind CSS",
+            "Javascript",
+            "Next-Auth",
+            "Axios",
+            "MongoDB",
+            "Mongoose",
+        ],
         demo_link: "https://ohabolanagasy.vercel.app/",
-        code_link: ""
+        code_link: "https://github.com/Eddy99leon/ohabolana"
     },
     { 
         id: 2, 
         name: "Madagascar",
-        resume: "Platform de gestion de tourisme",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
+        resume: "madagascar_resume",
+        description: "madagascar_desc",
         image: madagascar,
-        delay: "4",
-        type: "personnel",
-        level: "facile",
+        technologies: [
+            "Javascript",
+            "React.Js",
+            "Tailwind CSS",
+            "React-Router",
+            "React-Icons",
+            "Vite.Js"
+        ],
         demo_link: "https://eddy99leon.github.io/Madagascar",
-        code_link: ""
+        code_link: "https://github.com/Eddy99leon/Madagascar"
     },
     { 
         id: 3, 
         name: "Fondroy",
-        resume: "Platform de gestion de tourisme",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
+        resume: "fondroy_resume",
+        description: "fondroy_desc",
         image: fondroy,
-        delay: "5",
-        type: "personnel",
-        level: "difficile",
+        technologies: [
+            "Typescript",
+            "React.Js",
+            "Tailwind CSS",
+            "ShadCN",
+            "MongoDB",
+            "Node.Js",
+            "Clerk",
+        ],
         demo_link: "https://fondroy.onrender.com/",
-        code_link: ""
+        code_link: null
     },
     { 
         id: 4, 
         name: "Oniversity Ravelojaona",
-        resume: "Platform Universitaire",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
+        resume: "onifra_resume",
+        description: "onifra_desc",
         image: onifra,
-        delay: "3",
-        type: "professionnel",
-        level: "difficile",
-        demo_link: "",
-        code_link: ""
+        technologies: [
+            "Figma",
+            "Javascript",
+            "React.Js",
+            "Tailwind CSS",
+            "PHP",
+            "Laravel",
+        ],
+        demo_link: null,
+        code_link: null
     },
     { 
         id: 5, 
         name: "Eddy Portfolio ( v1 )",
-        resume: "Portfolio",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum! Lorem ipsum dolor sit amet consectetur.",
+        resume: "eddy_portfolio_v1_resume",
+        description: "eddy_portfolio_v1_desc",
         image: portfolio,
-        delay: "2",
-        type: "personnel",
-        level: "difficile",
+        technologies: [
+            "React.Js",
+            "Tailwind CSS",
+            "Javascript",
+            "React-Router",
+            "React-Icons",
+            "Vite.Js"
+        ],
         demo_link: "https://eddy99leon.github.io/EddyPortfolio/",
         code_link: "https://github.com/Eddy99leon/EddyPortfolio"
     }
@@ -168,11 +195,11 @@ export const ProjectList : ProjectType[] = [
 export const experienceLists : ExperienceType[] = [
     {
       id: 1,
-      poste: "Développeur Fullstack React / Symfony",
+      poste: "skhay_poste",
       entreprise: "SK'HAY",
-      date: "Mars 2024 - Maintenant",
-      type: "CDI",
-      description: `On travaille sur un projet de site d'animation pour une plateforme de rencontre. J’ai créé des API avec Symfony, corrigé et amélioré le design en utilisant Material UI, puis rendu le site interactif avec React. On a utilisé MySQL pour la base de données et Pusher pour afficher les données en temps réel.`,
+      date: "skhay_date",
+      type: "skhay_type",
+      description: "skhay_desc",
       technologies: [
         "React.Js",
         "Material Ui",
@@ -185,11 +212,11 @@ export const experienceLists : ExperienceType[] = [
     },
     {
       id: 2,
-      poste: "Développeur Fullstack React / Node.Js",
+      poste: "haisoa_poste",
       entreprise: "HAISOA",
-      date: "Jul 2023 - Oct 2023",
-      type: "Stage",
-      description: `On a travaillé sur la création d'un site universitaire. On a utilisé React pour le frontend et ExpressJS pour le backend. J'ai réalisé le design sur Figma, puis l'ai intégré avant de développer le backend et dynamiser le site avec React. On a utilisé MongoDB pour la base de données et Tailwind pour l'intégration du design.`,
+      date: "haisoa_date",
+      type: "haisoa_type",
+      description: "haisoa_desc",
       technologies: [
         "React.Js",
         "Tailwind",
@@ -201,4 +228,28 @@ export const experienceLists : ExperienceType[] = [
       ],
     },
 ];
+
+export const CapabilityLists: CapabilityType[] = [
+    {
+      id: 1,
+      isAccent: true,
+      icon: "palette",
+      label: "Creative",
+      title: "UI/UX Design",
+    },
+    {
+      id: 2,
+      isAccent: false,
+      icon: "monitor",
+      label: "Flexible",
+      title: "Agile Learner",
+    },
+    {
+      id: 3,
+      isAccent: false,
+      icon: "wrench",
+      label: "Robust",
+      title: "Problem Solver",
+    },
+  ];
   

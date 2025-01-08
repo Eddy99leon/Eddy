@@ -1,7 +1,8 @@
 import aboutImg from "@/assets/img1.jpg"
+import { CapabilityLists } from "@/constants/global"
 import { useSetting } from "@/contexts/SettingContext"
-import { Monitor, Palette, Wrench } from "lucide-react"
 import { useTranslation } from "react-i18next"
+import CapabilityCard from "./cards/CapabilityCard"
 
 const About = () => {
   const { t } = useTranslation()
@@ -35,7 +36,7 @@ const About = () => {
             {t("aboutMe")}
           </h3>
           <h4 className="text-gray-400 text-xs sm:text-sm md:text-base">
-            Quand le code rencontre la créativité.. 😉
+            {t("about_h4_title")}
           </h4>
         </div>
 
@@ -58,45 +59,11 @@ const About = () => {
               {t("aboutDesc")}
             </p>
             <div className="grid grid-cols-3 gap-1 sm:gap-2">
-              <div className="col-span-1 bg-accent w-full h-full py-4 rounded-primary p-1 sm:p-2 md:p-3 lg:p-4">
-                <div className="bg-accent-100 w-fit rounded-primary p-3 mb-4">
-                  <Palette className="size-4 md:size-5" />
-                </div>
-                <div className="">
-                  <p className="text-gray-300 text-xs md:text-sm lg:text-base">
-                    Creative
-                  </p>
-                  <h2 className="text-gray-100 text-xs sm:text-lg md:text-xl lg:text-2xl whitespace-nowrap font-medium">
-                    UI/UX Design
-                  </h2>
-                </div>
-              </div>
-              <div className="col-span-1 bg-gray-700 w-full h-full py-4 rounded-primary p-1 sm:p-2 md:p-3 lg:p-4">
-                <div className="bg-gray-600 w-fit rounded-primary p-3 mb-4">
-                  <Monitor className="size-4 md:size-5" />
-                </div>
-                <div className="">
-                  <p className="text-gray-300 text-xs md:text-sm lg:text-base">
-                    Interactive
-                  </p>
-                  <h2 className="text-gray-100 text-xs sm:text-lg md:text-xl lg:text-2xl whitespace-nowrap font-medium">
-                    Digital Interfaces
-                  </h2>
-                </div>
-              </div>
-              <div className="col-span-1 bg-gray-700 w-full h-full py-4 rounded-primary p-1 sm:p-2 md:p-3 lg:p-4">
-                <div className="bg-gray-600 w-fit rounded-primary p-3 mb-4">
-                  <Wrench className="size-4 md:size-5" />
-                </div>
-                <div className="">
-                  <p className="text-gray-300 text-xs md:text-sm lg:text-base">
-                    Robust
-                  </p>
-                  <h2 className="text-gray-100 text-xs sm:text-lg md:text-xl lg:text-2xl whitespace-nowrap font-medium">
-                    Problem Solver
-                  </h2>
-                </div>
-              </div>
+              { CapabilityLists.map((capability) => {
+                return (
+                  <CapabilityCard key={capability.id} capability={capability} />
+                )
+              })}
             </div>
           </div>
         </div>
