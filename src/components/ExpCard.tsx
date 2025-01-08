@@ -38,7 +38,7 @@ const ExpCard = ({experience} : ExperienceProps) => {
                 {t(experience.type)}
             </h1>
         </div>
-        <p className="text-xs sm:text-sm text-gray-500 text-justify mb-2">
+        <p className="text-sm text-gray-500 text-justify mb-2">
             {t(experience.description)}
         </p>
         <div className="flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm md:text-base">

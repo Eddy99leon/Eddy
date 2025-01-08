@@ -52,7 +52,7 @@ const ProjectItem = ({project}: ProjectItemProps) => {
                     <h4 className="mb-2 text-sm sm:text-base">
                         {t(project.resume)}
                     </h4>
-                    <p className="text-gray-500 text-xs sm:text-sm text-justify">
+                    <p className="text-gray-500 text-sm text-justify">
                         {t(project.description)}
                     </p>
                 </div>

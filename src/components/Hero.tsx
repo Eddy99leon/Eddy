@@ -18,11 +18,11 @@ const Hero = () => {
             <h1 className="text-5xl md:text-6xl font-semibold mb-2 tracking-wide">
               Eddy Léon
             </h1>
-            <h2 className="text-gray-600 text-lg sm:text-xl md:text-2xl tracking-wide mb-1 md:mb-2">
+            <h2 className="text-gray-600 text-xl md:text-2xl tracking-wide mb-1 md:mb-2">
               {t("post")}
             </h2>
             <hr className="border-t-2 bg-accent mb-2 max-w-36 h-[6px]" />
-            <p className="max-w-[450px] text-gray-500 text-xs sm:text-sm md:text-base mb-4 md:mb-6">
+            <p className="max-w-[450px] text-gray-500 text-sm md:text-base mb-4 md:mb-6">
               {t("heroDesc")}
             </p>
             <div className="flex items-center gap-8">

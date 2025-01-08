@@ -26,12 +26,12 @@ const Setting = () => {
             <DialogTrigger>
                 <Settings className="size-5 sm:size-6 lg:size-7" />
             </DialogTrigger>
-            <DialogContent className="w-[320px] sm:w-[340px] md:w-[400px] rounded-primary">
+            <DialogContent className="w-[340px] md:w-[400px] rounded-primary">
                 <DialogHeader>
                     <DialogTitle className="mb-2 sm:mb-4 text-base">
                         Settings:
                     </DialogTitle>
-                    <DialogDescription className="mb-2 sm:mb-4">
+                    <DialogDescription asChild className="mb-2 sm:mb-4">
                         <div className="space-y-2 sm:space-y-4">
                             <div>
                                 <h2 className="mb-2 text-start text-xs sm:text-sm">
@@ -134,13 +134,13 @@ const Setting = () => {
                     </DialogDescription>
                     <div className="flex justify-between items-center text-sm sm:text-base pt-4 sm:pt-6">
                         <DialogClose asChild>
-                            <button className="border w-36 py-2 rounded-primary">
+                            <button className="border w-28 sm:w-36 py-2 rounded-primary">
                                 Annuler
                             </button>
                         </DialogClose>
                         <button 
                             onClick={() => {}}
-                            className="bg-gray-100 border w-36 py-2 rounded-primary"
+                            className="bg-gray-100 border w-28 sm:w-36 py-2 rounded-primary"
                         >
                             Sauvegarder
                         </button>

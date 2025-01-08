@@ -134,8 +134,8 @@ const Contact = () => {
           <div className="col-span-3 lg:col-span-2 w-full flex justify-end relative">
             <div className="bg-white shadow-md rounded-primary overflow-hidden lg:absolute w-full lg:w-[650px] lg:-top-72">
               <div className="flex items-center justify-center bg-accent-50 h-24 text-center">
-                <p className="text-xs sm:text-sm md:text-base">
-                  Write me a few words about your project and i'll prepare <br />
+                <p className="text-sm md:text-base">
+                  Write me a few words about your project,<br />
                   a proposale for you within 24 hours
                 </p>
               </div>

@@ -9,7 +9,7 @@ const About = () => {
   const { theme } = useSetting()
 
   return (
-    <div className="bg-black pb-20">
+    <div className="bg-black pb-10 sm:pb-16 md:pb-20">
 
 
       <div>
@@ -41,11 +41,11 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-6">
-          <div className=" col-span-2 md:col-span-1 flex md:justify-start">
+          <div className="col-span-2 md:col-span-1 flex md:justify-start">
             <img 
               src={aboutImg} 
               alt="about image"
-              className="w-full md:w-[350px] rounded-primary"
+              className="w-full md:w-[350px] h-auto rounded-primary"
             />
           </div>
           <div className="order-first md:order-last col-span-2">
@@ -55,7 +55,7 @@ const About = () => {
             <p className="italic text-gray-400 mb-3 text-sm sm:text-base">
               {t("quote")}
             </p>
-            <p className="mb-4 text-gray-300 border-l-2 border-gray-600 pl-2 text-justify text-xs sm:text-sm md:text-sm">
+            <p className="mb-4 text-gray-300 border-l-2 border-gray-600 pl-2 text-justify text-sm md:text-base">
               {t("aboutDesc")}
             </p>
             <div className="grid grid-cols-3 gap-1 sm:gap-2">

@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <div>
 
-      <div className="bg_svg2">
-        <div className="container md:flex justify-between gap-4 text-white py-14">
+      <div className="bg_svg2 bg-cover">
+        <div className="container md:flex justify-between gap-4 text-white py-6 sm:py-10 md:py-14">
           {/* first */}
           <div className="mb-6 sm:mb-8 md:mb-0">
             <div>
@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
           {/* second */}
           <div>
-            <div className=" max-w-[300px] flex justify-between gap-4 mb-6 md:mb-10 text-sm sm:text-base">
+            <div className=" max-w-[300px] flex justify-between gap-4 mb-6 md:mb-10 text-base">
               {
                 navItems.map((item) => {
                   const isActive = location.pathname === item.link;
