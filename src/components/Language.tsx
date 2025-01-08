@@ -37,7 +37,7 @@ const Language = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-36 sm:w-40 md:w-44 ld:w-56">
         <DropdownMenuLabel className="text-sm sm:text-base py-1">
-          {t("Languages")}
+          {t("languages")}
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup 

@@ -1,6 +1,6 @@
 import { AtSign, Facebook, Github, Gitlab, Linkedin, LoaderCircle, MoveRight, Phone } from "lucide-react"
 import contactBg from "@/assets/bg5.svg"
-import { useTranslation } from "react-i18next"
+import { Trans, useTranslation } from "react-i18next"
 import Swal from 'sweetalert2'
 import { useState } from "react"
 
@@ -66,7 +66,7 @@ const Contact = () => {
                 {t("contactMe")}
               </h1>
               <h3 className="text-sm lg:text-xl">
-                Looking for a Developer.
+                {t("contact_h3_title")}
               </h3>
             </div>
             <div className="flex items-center gap-4">
@@ -91,12 +91,11 @@ const Contact = () => {
         <div className="container grid grid-cols-3 gap-4 pt-12 lg:pt-28 pb-14 sm:pb-20 lg:pb-48">
           <div className="col-span-3 sm:flex justify-between mb-6 lg:mb-0 lg:block lg:col-span-1 lg:space-y-6">
             <h2 className="max-w-[350px] text-xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-0">
-              You are one step closer to build your
-              perfect product .
+              {t("contact_h2_title")}
             </h2>
             <h3 className="hidden lg:flex items-center gap-4 text-xl">
               <span className="text-accent">
-                Juste send me a message
+                {t("send_me_message")}
               </span>
               <span>
                 <MoveRight size={28} className="text-accent" />
@@ -135,8 +134,7 @@ const Contact = () => {
             <div className="bg-white shadow-md rounded-primary overflow-hidden lg:absolute w-full lg:w-[650px] lg:-top-72">
               <div className="flex items-center justify-center bg-accent-50 h-24 text-center">
                 <p className="text-sm md:text-base">
-                  Write me a few words about your project,<br />
-                  a proposale for you within 24 hours
+                  <Trans i18nKey="contact_description" />
                 </p>
               </div>
               <form onSubmit={onSubmit} className="px-2 md:px-6 py-6 md:py-12 space-y-8 md:space-y-12">

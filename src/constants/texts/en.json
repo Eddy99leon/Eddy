@@ -64,5 +64,20 @@
     "copyright" : "© Copyright. All rights reserved.",
     "experience_h4_title": "A diverse experience, combining creativity and technical expertise.",
     "about_h4_title": "Passions, challenges, and innovation: a vision in every line of code.",
-    "project_h4_title": "Discover my achievements through personal projects."
+    "project_h4_title": "Discover my achievements through personal projects.",
+    "capability1_label": "Creative",
+    "capability1_title": "UI/UX Design",
+    "capability2_label": "Flexible",
+    "capability2_title": "Agile Learner",
+    "capability3_label": "Robust",
+    "capability3_title": "Problem Solver",
+    "contact_h3_title": "Looking for a Developer ?",
+    "contact_h2_title": "You are one step closer to build your perfect product.",
+    "send_me_message": "Juste send me a message",
+    "contact_description" : "Describe your project, and together we will find <br /> the best solution.",
+    "settings" : "Settings",
+    "cancel": "Cancel",
+    "save": "Save",
+    "color": "Color",
+    "navRapid": "Quick Navigation"
 }

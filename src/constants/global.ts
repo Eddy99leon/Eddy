@@ -234,22 +234,22 @@ export const CapabilityLists: CapabilityType[] = [
       id: 1,
       isAccent: true,
       icon: "palette",
-      label: "Creative",
-      title: "UI/UX Design",
+      label: "capability1_label",
+      title: "capability1_title",
     },
     {
       id: 2,
       isAccent: false,
       icon: "monitor",
-      label: "Flexible",
-      title: "Agile Learner",
+      label: "capability2_label",
+      title: "capability2_title",
     },
     {
       id: 3,
       isAccent: false,
       icon: "wrench",
-      label: "Robust",
-      title: "Problem Solver",
+      label: "capability3_label",
+      title: "capability3_title",
     },
-  ];
+];
   

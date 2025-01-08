@@ -64,5 +64,20 @@
     "copyright" : "© Copyright. Voaaro ny zo rehetra.",
     "experience_h4_title": "Zava-bita isan-karazany, mifangaro amin'ny famoronana sy ny fahaiza-manao ara-teknika.",
     "about_h4_title": "Fitiavana, fanamby, ary fanavaozana: vina amin'ny tsipika tsirairay amin'ny kaody.",
-    "project_h4_title": "Jereo ireo vokatra vitako amin'ny alalan'ny tetikasa manokana."
+    "project_h4_title": "Jereo ireo vokatra vitako amin'ny alalan'ny tetikasa manokana.",
+    "capability1_label": "Mamorona",
+    "capability1_title": "Mamolavola UI/UX",
+    "capability2_label": "Mora mahay",
+    "capability2_title": "Mianatra haingana",
+    "capability3_label": "Mahery",
+    "capability3_title": "Mamaha olana",
+    "contact_h3_title": "Mitady mpamorona tranokala ve ianao ?",
+    "contact_h2_title": "Dingana iray sisa manakaiky anao ho amin'ny vokatra tonga lafatra.",
+    "send_me_message": "Alefaso amiko fotsiny ny hafatra",
+    "contact_description" : "Azavao ny tetikasanao, isika miaraka dia hahita <br /> ny vahaolana tsara indrindra.",
+    "settings" : "Fametrahana",
+    "cancel": "Akatona",
+    "save": "Tehirizo",
+    "color": "Loko",
+    "navRapid": "Fifindra-Panovàna Haingana"
 }

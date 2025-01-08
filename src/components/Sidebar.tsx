@@ -38,7 +38,7 @@ const Sidebar = () => {
                             </div>
                         </SheetTitle>
                         <SheetDescription className="text-base sm:text-xl md:text-2xl">
-                            Navigation rapide.
+                            {t("navRapid")}
                         </SheetDescription>
                     </SheetHeader>
                     <div className="mt-4 space-y-3">
