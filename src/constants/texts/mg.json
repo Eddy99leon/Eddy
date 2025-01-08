@@ -47,6 +47,8 @@
     "onifra_desc": "Oniversity Ravelojaona dia platforma web novolavolaina mba hisolo tena oniversite, ny tantarany, sy ny serivisy. Ny site dia ahitana ny fizotry ny fandraisana anarana an-tserasera, ahafahan'ny mpianatra misoratra anarana amin'ny fomba tsotra sy mora ampiasaina. Nandray anjara tamin'ity tetikasa ity aho tamin'ny fanamboarana ny interface mpampiasa (UI) sy ny fanatanterahana azy tanteraka amin'ny React, raha ny iray amin'ireo mpamorona kosa no nanao ny ampahany backend.",
     "eddy_portfolio_v1_resume": "Portfolio manokana",
     "eddy_portfolio_v1_desc": "Eddy Portfolio (v1) dia ny dika voalohany amin'ny portfolioko manokana, natao ho fanehoana ny fahaiza-manaoko, ny tetikasako, sy ny lalako amin'ny asa amin'ny fomba mahasarika sy mahomby. Ity tetikasa ity dia nahafahako nanatsara ny fahaiza-manaoko amin'ny frontend sy ny UI/UX design, sady nampihatra animation mandroso sy fitetezana malefaka.",
+    "chat_app_resume": "Fifandefasana message eo no eo.",
+    "chat_app_desc": "Ity fampiharana ity dia mamela ny mpampiasa hifandray ara-potoana amin'ny alalan'ny Pusher. Novolavolaina tamin'ny React ho an'ny frontend ary Node.js ho an'ny backend, manome traikefa milamina sy mahomby izy. Tsy maintsy misoratra anarana aloha ny mpampiasa vao afaka miditra amin'ny fampiharana. Ny angon-drakitra sy ny resaka rehetra dia voatahiry soa aman-tsara ao amin'ny MongoDB.",
     "skhay_poste": "Mpamorona tranokala React / Symfony",
     "skhay_date": "Marsa 2024 - Ankehitriny",
     "skhay_type": "CDI",

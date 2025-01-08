@@ -47,6 +47,8 @@
     "onifra_desc": "Oniversity Ravelojaona is a web platform developed to represent a university, its history, and its services. The site includes an online registration process, allowing students to register in a simple and intuitive way. I contributed to this project by creating the user interface (UI) and fully integrating it with React, while another developer handled the backend.",
     "eddy_portfolio_v1_resume": "Personal Portfolio",
     "eddy_portfolio_v1_desc": "Eddy Portfolio (v1) is the first version of my personal portfolio, designed to showcase my skills, projects, and professional journey in an aesthetic and functional manner. This project allowed me to refine my frontend and UI/UX design skills while implementing dynamic animations and smooth navigation.",
+    "chat_app_resume": "Real-time instant messaging application.",
+    "chat_app_desc": "This application allows users to communicate in real-time using Pusher. Built with React for the frontend and Node.js for the backend, it ensures a smooth and responsive experience. Registration is required to access the application. User and conversation data are securely stored in a MongoDB database.",
     "skhay_poste": "Fullstack Developer React / Symfony",
     "skhay_date": "March 2024 - Now",
     "skhay_type": "CDI",
