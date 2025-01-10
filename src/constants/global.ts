@@ -27,6 +27,7 @@ import madagascar from "../assets/mada.jpg"
 import onifra from "../assets/onifra.jpg"
 import portfolio from "../assets/portfolio.jpg"
 import fondroy from "../assets/fondroy.png"
+import chatapp from "../assets/chatapp.png"
 
 import { CapabilityType, ColorType, ExperienceType, IconSkillType, NavItemType, ProjectType, RadiusType, ThemeType } from "../@types/global"
 
@@ -189,6 +190,23 @@ export const ProjectList : ProjectType[] = [
         ],
         demo_link: "https://eddy99leon.github.io/EddyPortfolio/",
         code_link: "https://github.com/Eddy99leon/EddyPortfolio"
+    },
+    { 
+        id: 6, 
+        name: "Chat app",
+        resume: "chat_app_resume",
+        description: "chat_app_desc",
+        image: chatapp,
+        technologies: [
+            "React.Js",
+            "Tailwind CSS",
+            "Javascript",
+            "Node.Js",
+            "Pusher.Js",
+            "MongoDB",
+        ],
+        demo_link: "https://chatapp-1-t3mq.onrender.com/",
+        code_link: "https://github.com/Eddy99leon/chatApp"
     }
 ]
 
