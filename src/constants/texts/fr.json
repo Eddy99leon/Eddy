@@ -81,5 +81,14 @@
     "cancel" : "Annuler",
     "save" : "Sauvegarder",
     "color" : "Couleur",
-    "navRapid": "Navigation Rapide"
+    "navRapid": "Navigation Rapide",
+    "red": "Rouge",
+    "blue": "Bleu",
+    "orange": "Orange",
+    "green": "Vert",
+    "violet": "Violet",
+    "yellow": "Jaune",
+    "dark": "Sombre",
+    "light": "Clair",
+    "none": "Aucun"
 }

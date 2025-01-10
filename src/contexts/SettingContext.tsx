@@ -41,9 +41,11 @@ export function SettingProvider({
   ...props
 }: SettingProviderProps) {
   const [color, setColor] = useState<Color>(
-    () => (localStorage.getItem(storageKey) as Color) || defaultColor
+    () => (localStorage.getItem(`${storageKey}-color`) as Color) || defaultColor
   );
-  const [borderRadius, setBorderRadius] = useState<BorderRadius>(defaultBorderRadius);
+  const [borderRadius, setBorderRadius] = useState<BorderRadius>(
+    () => (localStorage.getItem(`${storageKey}-radius`) as BorderRadius) || defaultBorderRadius
+  );
   const [theme, setTheme] = useState<Theme>(
     () => (localStorage.getItem(`${storageKey}-theme`) as Theme) || defaultTheme
   );
@@ -77,7 +79,7 @@ export function SettingProvider({
       setColor(color);
     },
     setBorderRadius: (borderRadius: BorderRadius) => {
-      localStorage.setItem(`${storageKey}-border-radius`, borderRadius);
+      localStorage.setItem(`${storageKey}-radius`, borderRadius);
       setBorderRadius(borderRadius);
     },
     setTheme: (theme: Theme) => {

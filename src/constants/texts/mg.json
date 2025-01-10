@@ -81,5 +81,14 @@
     "cancel": "Akatona",
     "save": "Tehirizo",
     "color": "Loko",
-    "navRapid": "Fifindra-Panovàna Haingana"
+    "navRapid": "Fifindra-Panovàna Haingana",
+    "red": "Mena",
+    "blue": "Manga",
+    "orange": "Voasary",
+    "green": "Maintso",
+    "violet": "Volomparasy",
+    "yellow": "Mavo",
+    "dark": "Maizina",
+    "light": "Mazava",
+    "none": "tsy misy"
 }

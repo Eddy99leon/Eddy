@@ -82,17 +82,17 @@ export const iconSkills : IconSkillType[] = [
 ]
 
 export const colors: ColorType[] = [
-    { id: 1, name: "Red", value: "red", color: "#C53030" },
-    { id: 2, name: "Blue", value: "blue", color: "#2B6CB0" },
-    { id: 3, name: "Orange", value: "orange", color: "#F97316" },
-    { id: 4, name: "Green", value: "green", color: "#2F855A" },
-    { id: 5, name: "Violet", value: "violet", color: "#6B46C1" },
-    { id: 6, name: "Yellow", value: "yellow", color: "#FACC15" },
+    { id: 1, name: "red", value: "red", color: "#C53030" },
+    { id: 2, name: "blue", value: "blue", color: "#2B6CB0" },
+    { id: 3, name: "orange", value: "orange", color: "#F97316" },
+    { id: 4, name: "green", value: "green", color: "#2F855A" },
+    { id: 5, name: "violet", value: "violet", color: "#6B46C1" },
+    { id: 6, name: "yellow", value: "yellow", color: "#FACC15" },
 ];
 
 export  const themes : ThemeType[] = [
-    { id: 1, name: "Dark", value: "dark" },
-    { id: 2, name: "Light", value: "light" },
+    { id: 1, name: "dark", value: "dark" },
+    { id: 2, name: "light", value: "light" },
 ];
 
 export const raduis : RadiusType[] = [

@@ -11,16 +11,25 @@ import { colors, raduis, themes } from "@/constants/global";
 import { BorderRadius, Color, useSetting } from "@/contexts/SettingContext";
 import { getIcon } from "@/lib";
 import { Settings } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const Setting = () => {
   const { t } = useTranslation()
-  const { setColor, setBorderRadius, setTheme } = useSetting();
-  
-  const [selectedRadiusId, setSelectedRadiusId] = useState<number | null>(null);
-  const [selectedColorId, setSelectedColorId] = useState<number | null>(null);
-  const [selectedThemeId, setSelectedThemeId] = useState<number | null>(null);
+  const { color, borderRadius, theme, setColor, setBorderRadius, setTheme } = useSetting();
+  const [ loading, setLoading ] = useState<boolean>(false);
+
+  const closeButtonRef = useRef<any>(null)
+
+  const handleSave = () => {
+    setLoading(true)
+    setTimeout(() => {
+        setLoading(false);
+        if (closeButtonRef.current) {
+            closeButtonRef.current.click()
+        }
+    }, 2000);
+  }
 
   return (
     <div>
@@ -40,24 +49,21 @@ const Setting = () => {
                                     Dark Mode :
                                 </h2>
                                 <div className="flex flex-wrap gap-2 sm:gap-4">
-                                    {themes?.map((theme) => {
-                                        const isActive = theme.id === selectedThemeId;
+                                    {themes?.map((th) => {
+                                        const isActive = th.value === theme;
                                         return (
                                             <div
-                                                key={theme.id}
-                                                onClick={() => {
-                                                    setSelectedThemeId(theme.id);
-                                                    setTheme(theme.value);
-                                                }}
+                                                key={th.id}
+                                                onClick={() => setTheme(th.value)}
                                                 className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-primary ${
                                                     isActive
                                                         ? "border border-accent"
                                                         : "border border-gray-300"
                                                 }`}
                                             >
-                                                {getIcon(theme.value)}
+                                                {getIcon(th.value)}
                                                 <span className="text-xs sm:text-sm">
-                                                    {theme.name}
+                                                    {t(th.name)}
                                                 </span>
                                             </div>
                                         );
@@ -70,14 +76,11 @@ const Setting = () => {
                                 </h2>
                                 <div className="flex flex-wrap gap-2 sm:gap-4">
                                     {raduis?.map((radui) => {
-                                        const isActive = radui.id === selectedRadiusId;
+                                        const isActive = radui.value === borderRadius;
                                         return (
                                             <div
                                                 key={radui.id}
-                                                onClick={() => {
-                                                    setBorderRadius(radui.value as BorderRadius);
-                                                    setSelectedRadiusId(radui.id)
-                                                }}
+                                                onClick={() => setBorderRadius(radui.value as BorderRadius)}
                                                 className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-primary ${
                                                     isActive
                                                         ? "border border-accent"
@@ -88,11 +91,11 @@ const Setting = () => {
                                                     type="radio"
                                                     name="radius"
                                                     checked={isActive}
-                                                    onChange={() => setSelectedRadiusId(radui.id)}
+                                                    onChange={() => setBorderRadius(radui.value as BorderRadius)}
                                                     className="size-3 sm:size-4 text-accent bg-white border-gray-300 rounded-full cursor-pointer"
                                                 />
                                                 <span className="text-xs sm:text-sm">
-                                                    {radui.name}
+                                                    {t(radui.name)}
                                                 </span>
                                             </div>
                                         );
@@ -104,15 +107,12 @@ const Setting = () => {
                                     {t("color")} :
                                 </h2>
                                 <div className="flex flex-wrap gap-2 sm:gap-4">
-                                    {colors?.map((color) => {
-                                        const isActive = color.id === selectedColorId;
+                                    {colors?.map((c) => {
+                                        const isActive = c.value === color;
                                         return (
                                             <div
-                                                key={color.id}
-                                                onClick={() => {
-                                                    setColor(color.value as Color);
-                                                    setSelectedColorId(color.id)
-                                                }}
+                                                key={c.id}
+                                                onClick={() => setColor(c.value as Color)}
                                                 className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-primary ${
                                                     isActive
                                                         ? "border border-accent"
@@ -121,11 +121,11 @@ const Setting = () => {
                                             >
                                                 <div
                                                     className="size-3 sm:size-4 rounded-full"
-                                                    style={{ backgroundColor: color.color }}
-                                                    title={color.name}
+                                                    style={{ backgroundColor: c.color }}
+                                                    title={c.name}
                                                 />
                                                 <span className="text-xs sm:text-sm">
-                                                    {color.name}
+                                                    {t(c.name)}
                                                 </span>
                                             </div>
                                         );
@@ -135,16 +135,16 @@ const Setting = () => {
                         </div>
                     </DialogDescription>
                     <div className="flex justify-between items-center text-sm sm:text-base pt-4 sm:pt-6">
-                        <DialogClose asChild>
+                        <DialogClose ref={closeButtonRef} asChild>
                             <button className="border w-28 sm:w-36 py-2 rounded-primary text-tprimary-50">
                                 {t("cancel")} 
                             </button>
                         </DialogClose>
                         <button 
-                            onClick={() => {}}
+                            onClick={handleSave}
                             className="bg-gray-100 border w-28 sm:w-36 py-2 rounded-primary"
                         >
-                            {t("save")}
+                            {loading? t("load") : t("save")}
                         </button>
                     </div>
                 </DialogHeader>
