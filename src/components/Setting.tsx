@@ -28,7 +28,7 @@ const Setting = () => {
         if (closeButtonRef.current) {
             closeButtonRef.current.click()
         }
-    }, 2000);
+    }, 500);
   }
 
   return (
