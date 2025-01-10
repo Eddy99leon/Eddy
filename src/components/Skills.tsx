@@ -18,7 +18,7 @@ const Skills = () => {
                             alt={skill.name} 
                             className=" size-5 sm:size-6 md:size-8" 
                         />
-                        <span className="text-xs font-medium">
+                        <span className="text-xs font-medium text-gray-900">
                             {skill.name}
                         </span>
                     </div>

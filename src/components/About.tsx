@@ -17,7 +17,7 @@ const About = () => {
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 1000 100" 
-            fill={ theme == "light" ? "#f3f4f6" : "#000000"}
+            fill={ theme == "light" ? "#f9fafb" : "#000000"}
           >
             <path d="M0 0v84l500 16 500-16V0H0z" opacity=".2"></path>
             <path d="M0 0v64l500 36 500-36V0H0z" opacity=".4"></path>

@@ -87,7 +87,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="bg-gray-50">
+      <div className="bg-background">
         <div className="container grid grid-cols-3 gap-4 pt-12 lg:pt-28 pb-14 sm:pb-20 lg:pb-48">
           <div className="col-span-3 sm:flex justify-between mb-6 lg:mb-0 lg:block lg:col-span-1 lg:space-y-6">
             <h2 className="max-w-[350px] text-xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-0">
@@ -104,26 +104,26 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="flex items-center gap-3">
                 <div className="bg-accent-50 rounded-primary p-5">
-                  <Phone size={20} />
+                  <Phone size={20} className="text-tprimary-300" />
                 </div>
                 <div>
                   <h1>
                     {t("phone")}
                   </h1>
-                  <p className="text-gray-600">
+                  <p className="text-tprimary-200">
                     +261 34 50 117 05
                   </p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <div className="bg-accent-50 rounded-primary p-5">
-                  <AtSign size={20} />
+                  <AtSign size={20} className="text-tprimary-300" />
                 </div>
                 <div>
                   <h1>
                     {t("email")}
                   </h1>
-                  <p className="text-gray-600">
+                  <p className="text-tprimary-200">
                     leoneddy504@gmail.com
                   </p>
                 </div>
@@ -133,7 +133,7 @@ const Contact = () => {
           <div className="col-span-3 lg:col-span-2 w-full flex justify-end relative">
             <div className="bg-white shadow-md rounded-primary overflow-hidden lg:absolute w-full lg:w-[650px] lg:-top-72">
               <div className="flex items-center justify-center bg-accent-50 h-24 text-center">
-                <p className="text-sm md:text-base">
+                <p className="text-sm md:text-base text-gray-500">
                   <Trans i18nKey="contact_description" />
                 </p>
               </div>

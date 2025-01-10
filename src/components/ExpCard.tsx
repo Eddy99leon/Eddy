@@ -5,7 +5,7 @@ const ExpCard = ({experience} : ExperienceProps) => {
   const { t } = useTranslation()
 
   return (
-    <div className="rounded py-3 pr-3">
+    <div className="rounded py-3 pr-3 text-tprimary-100">
         <div className="flex gap-1 text-sm sm:text-base">
             <h1 className="font-semibold">
                 {t("poste")}:
@@ -38,7 +38,7 @@ const ExpCard = ({experience} : ExperienceProps) => {
                 {t(experience.type)}
             </h1>
         </div>
-        <p className="text-sm text-gray-500 text-justify mb-2">
+        <p className="text-sm text-tprimary-200 text-justify mb-2">
             {t(experience.description)}
         </p>
         <div className="flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm md:text-base">

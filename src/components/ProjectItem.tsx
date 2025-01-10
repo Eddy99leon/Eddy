@@ -35,7 +35,7 @@ const ProjectItem = ({project}: ProjectItemProps) => {
     }
 
   return (
-    <div className="block md:flex w-full gap-3 bg-white rounded-primary shadow overflow-hidden p-3">
+    <div className="block md:flex w-full gap-3 bg-background border border-tprimary-400 rounded-primary shadow p-3">
         <div className="flex-1 rounded-primary mb-4 md:mb-0">
             <img 
                 src={project.image} 
@@ -52,7 +52,7 @@ const ProjectItem = ({project}: ProjectItemProps) => {
                     <h4 className="mb-2 text-sm sm:text-base">
                         {t(project.resume)}
                     </h4>
-                    <p className="text-gray-500 text-sm text-justify">
+                    <p className="text-tprimary-200 text-sm text-justify">
                         {t(project.description)}
                     </p>
                 </div>
@@ -77,19 +77,19 @@ const ProjectItem = ({project}: ProjectItemProps) => {
                         }
                     }}
                 >
-                    <button className="group flex items-center gap-1 px-3 py-2 border hover:bg-accent-50 rounded-primary">
+                    <button className="group flex items-center gap-1 px-3 py-2 border border-tprimary-400 rounded-primary">
                         <Play className="text-accent transition-transform duration-500 group-hover:scale-125 size-4 sm:size-5" /> 
-                        <span className="text-gray-600 text-sm sm:text-base">
+                        <span className="text-tprimary-100 text-sm sm:text-base">
                             {t("demo")}
                         </span>
                     </button>
                 </a>
                 <button 
-                    className="group flex items-center gap-1 px-3 py-2 border hover:bg-accent-50 rounded-primary"
+                    className="group flex items-center gap-1 px-3 py-2 border border-tprimary-400 rounded-primary"
                     onClick={() => handlePopup("detail")}
                 >
                     <Info className="text-accent transition-transform duration-500 group-hover:scale-125 size-4 sm:size-5" />
-                    <span className="text-gray-600 text-sm sm:text-base">
+                    <span className="text-tprimary-100 text-sm sm:text-base">
                         {t("detail")}
                     </span>
                 </button>
@@ -103,9 +103,9 @@ const ProjectItem = ({project}: ProjectItemProps) => {
                         }
                     }}
                 >
-                    <button className="group flex items-center gap-1 px-3 py-2 border hover:bg-accent-50 rounded-primary">
+                    <button className="group flex items-center gap-1 px-3 py-2 border border-tprimary-400 rounded-primary">
                         <Code className="text-accent transition-transform duration-500 group-hover:scale-125 size-4 sm:size-5" />
-                        <span className="text-gray-600 text-sm sm:text-base">
+                        <span className="text-tprimary-100 text-sm sm:text-base">
                             {t("code")}
                         </span>
                     </button>

@@ -27,7 +27,7 @@ const Language = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="flex items-center">
         <div className="cursor-pointer">
-          <Languages className="size-5 sm:size-6 lg:size-7 mr-[3px] sm:mr-1" />
+          <Languages className="size-5 sm:size-6 lg:size-7 mr-[3px] sm:mr-1 text-tprimary-100" />
           <Flag 
             code={flagCodes[position as "en" | "fr" | "mg"]}
             alt={position} 

@@ -13,9 +13,9 @@ const MainLayout: React.FC = () => {
       storageKey="eddy-ui"
     >
       <LanguageProvider>
-        <div className="bg-gray-50 text-gray-900 w-full min-h-screen flex flex-col justify-between">
+        <div className="bg-background text-tprimary w-full min-h-screen flex flex-col justify-between">
           <Navbar />
-          <div className="">
+          <div>
             <Outlet />
           </div>
           <Footer />

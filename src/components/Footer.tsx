@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div>
 
-      <div className="bg_svg2 bg-cover">
+      <div className="bg_svg2 bg-cover border-t border-tprimary-400">
         <div className="container md:flex justify-between gap-4 text-white py-6 sm:py-10 md:py-14">
           {/* first */}
           <div className="mb-6 sm:mb-8 md:mb-0">

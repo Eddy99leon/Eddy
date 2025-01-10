@@ -13,7 +13,7 @@ const Experience = () => {
                 <h3 className="text-base sm:text-lg md:text-xl text-accent mb-1 sm:mb-2">
                     {t("experience_section_title")}
                 </h3>
-                <h4 className="text-gray-600 text-xs sm:text-sm md:text-base">
+                <h4 className="text-tprimary-200 text-xs sm:text-sm md:text-base">
                     {t("experience_h4_title")}
                 </h4>
             </div>

@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div>
 
-      <div className="fixed w-full z-10 bg-black text-gray-200">
+      <div className="fixed w-full z-10 bg-black text-gray-200 border-b border-tprimary-300">
         <div className="container py-2 flex justify-between items-center">
           <div className="flex gap-3">
             <a 
@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="bg-background py-3 sm:py-4 lg:py-5 border-b shadow pt-11 sm:pt-12 lg:pt-14">
+      <div className="bg-background py-3 sm:py-4 lg:py-5 border-b border-tprimary-300 shadow pt-11 sm:pt-12 lg:pt-14">
         <div className="container flex justify-between items-center">
           <div className="flex items-center gap-14">
             <div className="flex items-center gap-1">
@@ -85,7 +85,7 @@ const Navbar = () => {
                       className={`text-base lg:text-lg relative transition-all duration-300 ${
                         isActive
                           ? "text-accent"
-                          : "text-gray-500 hover:text-accent"
+                          : "text-tprimary-100 hover:text-accent"
                       }`}
                     >
                       {t(`${item.name}`)}

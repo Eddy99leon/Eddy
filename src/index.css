@@ -8,16 +8,18 @@
 @layer base {
     :root {
         --background: 210, 17%, 98%;
+        --background-50: 0, 0%, 100%;
         --foreground: 240 10% 3.9%;
-        --primary: 222, 28%, 12%;
-        --secondary: 240 4.8% 95.9%;
+        --tprimary: 0, 0%, 10%;
+        --tprimary-50: 0, 0%, 20%;
+        --tprimary-100: 0, 0%, 30%;
+        --tprimary-200: 0, 0%, 50%;
+        --tprimary-300: 0, 0%, 70%;
+        --tprimary-400: 0, 0%, 90%;
         --accent: 213 100% 40%;
         --accent-100: 213 100% 44%;
         --accent-50: 213 100% 95%;
         --radius: 8px;
-    }
-    * {
-        @apply transition-colors duration-500 ease-in-out;
     }
     ::selection {
         @apply bg-accent-100 text-gray-50
@@ -25,48 +27,43 @@
 }
 .dark {
     --background: 0, 0%, 0%;
+    --background-50: 217, 19%, 15%;
     --foreground: 240 10% 3.9%;
+    --tprimary: 0, 0%, 98%;
+    --tprimary-50: 0, 0%, 80%;
+    --tprimary-100: 220, 14%, 83%;
+    --tprimary-200: 222, 9%, 63%;
+    --tprimary-300: 0, 0%, 30%;
+    --tprimary-400: 222, 13%, 36%;
 }
 
 
 .green {
-    --primary: 142.1 76.2% 36.3%;
-    --secondary: 240 4.8% 95.9%;
     --accent: 155 55% 35%;
     --accent-100: 155 55% 40%;
     --accent-50: 155 100% 95%;
 }
 .blue {
-    --primary: 221, 72%, 43%;
-    --secondary: 240 4.8% 95.9%;
     --accent: 213 100% 40%;
     --accent-100: 213 100% 44%;
     --accent-50: 213 100% 95%;
 }
 .red {
-    --primary: 221, 72%, 43%;
-    --secondary: 240 4.8% 95.9%;
     --accent: 0 80% 40%;
     --accent-100: 0 80% 45%;
     --accent-50: 0 100% 95%;
 }
 .orange {
-    --primary: 221, 72%, 43%;
-    --secondary: 240 4.8% 95.9%;
     --accent: 24 85% 45%;
     --accent-100: 24 85% 50%;
     --accent-50: 24 100% 95%;
 }
 .yellow {
-    --primary: 221, 72%, 43%;
-    --secondary: 240 4.8% 95.9%;
     --accent: 49 100% 40%;
     --accent-100: 49 95% 45%;
     --accent-50: 49 100% 95%;
 }
 .violet {
-    --primary: 221, 72%, 43%;
-    --secondary: 240 4.8% 95.9%;
     --accent: 261 60% 55%;
     --accent-100: 261 60% 60%;
     --accent-50: 261 100% 95%;

@@ -28,9 +28,9 @@ const Setting = () => {
             <DialogTrigger>
                 <Settings className="size-5 sm:size-6 lg:size-7" />
             </DialogTrigger>
-            <DialogContent className="w-[340px] md:w-[400px] rounded-primary">
+            <DialogContent className="w-[340px] md:w-[400px] rounded-primary bg-background-50">
                 <DialogHeader>
-                    <DialogTitle className="mb-2 sm:mb-4 text-base">
+                    <DialogTitle className="mb-2 sm:mb-4 text-base text-tprimary-100 text-center">
                         {t("settings")}:
                     </DialogTitle>
                     <DialogDescription asChild className="mb-2 sm:mb-4">
@@ -136,7 +136,7 @@ const Setting = () => {
                     </DialogDescription>
                     <div className="flex justify-between items-center text-sm sm:text-base pt-4 sm:pt-6">
                         <DialogClose asChild>
-                            <button className="border w-28 sm:w-36 py-2 rounded-primary">
+                            <button className="border w-28 sm:w-36 py-2 rounded-primary text-tprimary-50">
                                 {t("cancel")} 
                             </button>
                         </DialogClose>
