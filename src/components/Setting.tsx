@@ -58,7 +58,7 @@ const Setting = () => {
                                                 className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-primary ${
                                                     isActive
                                                         ? "border border-accent"
-                                                        : "border border-gray-300"
+                                                        : "border border-tprimary-400"
                                                 }`}
                                             >
                                                 {getIcon(th.value)}
@@ -84,7 +84,7 @@ const Setting = () => {
                                                 className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-primary ${
                                                     isActive
                                                         ? "border border-accent"
-                                                        : "border border-gray-300"
+                                                        : "border border-tprimary-400"
                                                 }`}
                                             >
                                                 <input
@@ -116,7 +116,7 @@ const Setting = () => {
                                                 className={`flex items-center gap-1 px-3 py-2 cursor-pointer rounded-primary ${
                                                     isActive
                                                         ? "border border-accent"
-                                                        : "border border-gray-300"
+                                                        : "border border-tprimary-400"
                                                 }`}
                                             >
                                                 <div
