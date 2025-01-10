@@ -12,7 +12,7 @@ const About = () => {
     <div className="bg-black pb-10 sm:pb-16 md:pb-20">
 
 
-      <div>
+      <div className={ theme == "light" ? "block" : "hidden" }>
         <div>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
